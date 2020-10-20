@@ -3,7 +3,7 @@ from textblob import TextBlob
 
 EXTRACT_PREPOSITION_SENTENCES = False
 RUN_ANALYSIS = False
-CHECKED_PREPOSITIONS = ["but"]
+CHECKED_PREPOSITIONS = ["but", "although", "though"]
 
 
 # todo: Flair, Textblob
