@@ -4,8 +4,9 @@ import nltk
 # todo - colab link: https://colab.research.google.com/drive/1y1nkiZiWFwi4cpMftaXuTVOwAE9NKVOP#scrollTo=UqUcKkH7N_oN
 class Analyzer:
 
-    def __init__(self, list_of_files):
+    def __init__(self, list_of_files, delimiter):
         self.list_of_files = list_of_files
+        self.delimiter = delimiter
 
     @classmethod
     def _get_sid(cls):
@@ -18,8 +19,8 @@ class Analyzer:
         nltk_vader = self._get_sid()
 
         # for file in self.list_of_files:
-        file = "though_sentences"
-        with open(file ,'r') as reader:
-            for sentence in reader:
-                analysis.append(nltk_vader.polarity_scores(sentence))
-            print(analysis)
+        file = "however_sentences"
+        with open(file,'r') as reader:
+            for line in reader:
+                print(line.split(self.delimiter))
+                print(nltk_vader.polarity_scores(line))

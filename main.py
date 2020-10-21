@@ -1,16 +1,16 @@
 from analyzer import Analyzer
 from parse import Parse
 
-EXTRACT_PREPOSITION_SENTENCES = False
+EXTRACT_PREPOSITION_SENTENCES = True
 RUN_ANALYSIS = True
-
-CHECKED_PREPOSITIONS = ["but", "although", "though"]
+DELIMITER = "###---###"
+CHECKED_PREPOSITIONS = ["but", "although", "however"]
 
 
 def main():
     list_of_files = None
     if EXTRACT_PREPOSITION_SENTENCES:
-        p = Parse(CHECKED_PREPOSITIONS)
+        p = Parse(CHECKED_PREPOSITIONS, DELIMITER)
         list_of_files = p.extract_preposition_sentences()
         with open("list_of_files", "w") as writer:
             writer.writelines(file + "\n" for file in list_of_files)
@@ -18,7 +18,7 @@ def main():
     if RUN_ANALYSIS:
         if not list_of_files:
             list_of_files = get_list_of_files(list_of_files)
-        analyz = Analyzer(list_of_files)
+        analyz = Analyzer(list_of_files, DELIMITER)
         analyz.analyze()
 
 
