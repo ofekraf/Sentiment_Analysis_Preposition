@@ -1,5 +1,7 @@
 import nltk
 import matplotlib.pyplot as plt
+from pylab import *
+
 
 # todo: Flair, Textblob
 # todo - parsers: https://elitedatascience.com/python-nlp-libraries
@@ -7,6 +9,7 @@ import matplotlib.pyplot as plt
 class Analyzer:
     FUNCTION_POS = 0
     KWD_POS = 1
+    STRETCHING_FUNC = 2
 
     def __init__(self, list_of_files, delimiter):
         self.list_of_files = list_of_files
@@ -38,12 +41,30 @@ class Analyzer:
         if not self._analysis_done:
             print("Warning! you must first analyze before plotting! ")
             return
-        # todo - plot
+        fig = plt.figure()
+        file = "but_sentences"  # todo
 
+
+        ax = fig.add_subplot(111)
+        # Move left y-axis and bottim x-axis to centre, passing through (0,0)
+        ax.spines['left'].set_position('center')
+        ax.spines['bottom'].set_position('center')
+
+        # Eliminate upper and right axes
+        ax.spines['right'].set_color('none')
+        ax.spines['top'].set_color('none')
+
+        # Show ticks in the left and lower axes only
+        ax.xaxis.set_ticks_position('bottom')
+        ax.yaxis.set_ticks_position('left')
+        x = self.coords[file][0]
+        y = self.coords[file][1]
+        scatter(x, y, s=100)
+        show()
 
     def analyze(self):
         # for file in self.list_of_files:
-        file = "however_sentences"
+        file = "but_sentences" #todo
         self.coords[file] = ([], [])
         with open(file, 'r') as reader:
             for line in reader:
@@ -59,9 +80,9 @@ class Analyzer:
 
     @classmethod
     def calc_score(self, module, sentence):
-        return module[self.FUNCTION_POS](sentence)[module[self.KWD_POS]]
+        return module[self.STRETCHING_FUNC](module[self.FUNCTION_POS](sentence)[module[self.KWD_POS]])
 
     def initialize_modules(self):
         nltk_vader = self._get_sid()
         self.sentiment_modules[nltk_vader] = (
-        nltk_vader.polarity_scores, 'compound')
+        nltk_vader.polarity_scores, 'compound', lambda x: x*5)
