@@ -20,6 +20,7 @@ def main():
             list_of_files = get_list_of_files(list_of_files)
         analyz = Analyzer(list_of_files, DELIMITER)
         analyz.analyze()
+        analyz.plot()
 
 
 def get_list_of_files(list_of_files):
@@ -28,10 +29,6 @@ def get_list_of_files(list_of_files):
         list_of_files = [file[:file.index('\n')] if '\n' in file else file for
                          file in list_of_files]
     return list_of_files
-
-
-# todo - parsers:
-# https://elitedatascience.com/python-nlp-libraries
 
 
 if __name__ == '__main__':

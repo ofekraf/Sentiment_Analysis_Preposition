@@ -18,6 +18,7 @@ class Parse:
                         if len(splited_line) != 2 or len(
                                 splited_line[0]) < 2 or len(
                                 splited_line[1]) < 2:
+                            # todo - perhaps limit to longer sentences?
                             print(line)
                             continue
 
