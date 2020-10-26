@@ -20,6 +20,7 @@ class Parse:
                                 splited_line[1]) < 2:
                             # todo - perhaps limit to longer sentences?
                             print(line)
+                            counter += 1
                             continue
 
                             # in the corpus of 3000 sentences,

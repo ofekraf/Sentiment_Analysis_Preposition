@@ -1,8 +1,5 @@
 import nltk
 import matplotlib.pyplot as plt
-from pylab import *
-
-
 # todo: Flair, Textblob
 # todo - parsers: https://elitedatascience.com/python-nlp-libraries
 
@@ -41,26 +38,24 @@ class Analyzer:
         if not self._analysis_done:
             print("Warning! you must first analyze before plotting! ")
             return
-        fig = plt.figure()
-        file = "but_sentences"  # todo
 
+        print("starting plotting")
 
-        ax = fig.add_subplot(111)
-        # Move left y-axis and bottim x-axis to centre, passing through (0,0)
-        ax.spines['left'].set_position('center')
-        ax.spines['bottom'].set_position('center')
+        self.list_of_files = ["but_sentences", "however_sentences"]
 
-        # Eliminate upper and right axes
-        ax.spines['right'].set_color('none')
-        ax.spines['top'].set_color('none')
+        fig, all_plots = plt.subplots(len(self.list_of_files), len(self.sentiment_modules))
+        x = [1,2,3]
+        y = [1,2,3]
+        all_plots[0, 0].plot(x, y)
+        all_plots[0, 0].set_title('Axis [0,0]')
+        all_plots[0, 1].plot(x, y, 'tab:orange')
+        all_plots[0, 1].set_title('Axis [0,1]')
+        # for mod_idx, module in enumerate(self.sentiment_modules):
+        #     for prop_idx, file_name in enumerate(self.list_of_files):
+        #         all_plots[mod_idx][prop_idx]
 
-        # Show ticks in the left and lower axes only
-        ax.xaxis.set_ticks_position('bottom')
-        ax.yaxis.set_ticks_position('left')
-        x = self.coords[file][0]
-        y = self.coords[file][1]
-        scatter(x, y, s=100)
-        show()
+        fig.show()
+
 
     def analyze(self):
         # for file in self.list_of_files:
@@ -72,7 +67,6 @@ class Analyzer:
 
                 first = self.clean(first)
                 sec = self.clean(sec)
-                #   print("first: " + first + " || sec: "+ sec)
                 for _, module in self.sentiment_modules.items():
                     self.coords[file][0].append(self.calc_score(module, first))
                     self.coords[file][1].append(self.calc_score(module, sec))
