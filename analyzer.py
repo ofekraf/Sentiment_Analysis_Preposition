@@ -67,17 +67,21 @@ class Analyzer:
         for file in self.list_of_files:
             self.coords[file] = {n: ([], []) for n in
                                  self.sentiment_modules.keys()}
-            with open(file, 'r') as reader:
-                for line in reader:
-                    first, sec = line.split(self.delimiter)
+            try:
+                with open(file, 'r') as reader:
+                    for line in reader:
+                        first, sec = line.split(self.delimiter)
 
-                    first = self.clean(first)
-                    sec = self.clean(sec)
-                    for mod_name, module in self.sentiment_modules.items():
-                        self.coords[file][mod_name][0].append(
-                            self.calc_score(module, first))
-                        self.coords[file][mod_name][1].append(
-                            self.calc_score(module, sec))
+                        first = self.clean(first)
+                        sec = self.clean(sec)
+                        for mod_name, module in self.sentiment_modules.items():
+                            self.coords[file][mod_name][0].append(
+                                self.calc_score(module, first))
+                            self.coords[file][mod_name][1].append(
+                                self.calc_score(module, sec))
+            except ValueError as e:
+                print("line is :"+line)
+                raise e
         self._analysis_done = True
 
     @classmethod

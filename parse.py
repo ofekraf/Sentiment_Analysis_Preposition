@@ -41,7 +41,9 @@ class Parse:
             list_of_files.append(prep + "_sentences")
             with open(list_of_files[-1], 'w') as writer:
                 for tup in self.preposition_split_sentences[prep]:
-                    writer.write(tup[0] + self.delimiter + tup[1] + "\n")
+                    to_write = tup[0] + self.delimiter + tup[1]
+                    to_write = to_write +'\n' if '\n' not in to_write else to_write
+                    writer.write(to_write)
         return list_of_files
 
     def _get_substring_propositions(self):
