@@ -33,3 +33,8 @@ def get_list_of_files(list_of_files):
 
 if __name__ == '__main__':
     main()
+
+
+# sentences taken from:
+# https://github.com/microsoft/ML-Server-Python-Samples/tree/master/microsoftml/202/data/sentiment_analysis
+# https://raw.githubusercontent.com/sharmaroshan/Twitter-Sentiment-Analysis/master/test_tweets.csv
