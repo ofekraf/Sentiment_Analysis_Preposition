@@ -3,12 +3,18 @@ from parse import Parse
 
 EXTRACT_PREPOSITION_SENTENCES = True
 RUN_ANALYSIS = True
+CLEAN_TWEETS = False
+
 DELIMITER = "###---###"
 CHECKED_PREPOSITIONS = ["but", "although", "however"]
 
 
 def main():
     list_of_files = None
+
+    if CLEAN_TWEETS:
+        clean_tweets()
+
     if EXTRACT_PREPOSITION_SENTENCES:
         p = Parse(CHECKED_PREPOSITIONS, DELIMITER)
         list_of_files = p.extract_preposition_sentences()
@@ -45,7 +51,6 @@ def clean_tweets():
 
 if __name__ == '__main__':
     main()
-    # clean_tweets()
 
 # sentences taken from:
 # https://github.com/microsoft/ML-Server-Python-Samples/tree/master/microsoftml/202/data/sentiment_analysis

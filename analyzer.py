@@ -1,4 +1,6 @@
 import nltk
+from google.cloud import language_v1
+
 import matplotlib.pyplot as plt
 
 # todo: Flair
@@ -54,11 +56,16 @@ class Analyzer:
         # all_plots[0, 1].set_title('Axis [0,1]')
 
         for mod_idx, module in enumerate(self.sentiment_modules):
+            all_plots[0, mod_idx].set_title(module)
             for prop_idx, file_name in enumerate(self.list_of_files):
                 all_plots[mod_idx, prop_idx].scatter(
                     self.coords[file_name][module][0],
                     self.coords[file_name][module][1])
-                all_plots[mod_idx, prop_idx].axes.grid = True
+                all_plots[mod_idx, prop_idx].grid()
+                all_plots[mod_idx, prop_idx].axis(xmin=-5, xmax=5,
+                                                  ymin=-5, ymax=5)
+                all_plots[mod_idx, 0].set_ylabel(file_name.split("_")[0])
+                all_plots[mod_idx, 0].yaxis.set_label_position("left")
 
         fig.show()
 
@@ -80,7 +87,7 @@ class Analyzer:
                             self.coords[file][mod_name][1].append(
                                 self.calc_score(module, sec))
             except ValueError as e:
-                print("line is :"+line)
+                print("line is :" + line)
                 raise e
         self._analysis_done = True
 
@@ -97,3 +104,8 @@ class Analyzer:
         from textblob import TextBlob
         self.sentiment_modules["TextBlob"] = (
             lambda x: TextBlob(x).sentiment, 0, lambda x: x * 5)
+
+        # client = language_v1.LanguageServiceClient()
+        # self.sentiment_modules["googleCloud"] =
+        # sentiment = client.analyze_sentiment(
+        #     request={'document': document}).document_sentiment
