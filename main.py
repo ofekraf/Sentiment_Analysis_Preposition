@@ -1,14 +1,15 @@
 from analyzer import Analyzer
 from parse import Parse
 
-EXTRACT_PREPOSITION_SENTENCES = True
+EXTRACT_PREPOSITION_SENTENCES = False
 RUN_ANALYSIS = True
 CLEAN_TWEETS = False
+CLEAN_MOVIE_LINES = False
 PRINT_LOGS = False
 
 
 DELIMITER = "###---###"
-CHECKED_PREPOSITIONS = ["but", "although", "however"]
+CHECKED_PREPOSITIONS = ["but", "although", "however", "even though"]
 
 
 def main():
@@ -16,6 +17,9 @@ def main():
 
     if CLEAN_TWEETS:
         clean_tweets()
+
+    if CLEAN_MOVIE_LINES:
+        clean_movie_text_lines()
 
     if EXTRACT_PREPOSITION_SENTENCES:
         p = Parse(CHECKED_PREPOSITIONS, DELIMITER)
@@ -51,9 +55,15 @@ def clean_tweets():
         for line in clean_tweets:
             writer.write(line+"\n")
 
+
+def clean_movie_text_lines():
+    with open('movie_lines_cleaned','w') as writer:
+        with open('movie_lines.txt','r') as reader:
+            for line in reader:
+                writer.write(line.split("+++$+++")[-1])
+
 if __name__ == '__main__':
     main()
-
 # sentences taken from:
 # https://github.com/microsoft/ML-Server-Python-Samples/tree/master/microsoftml/202/data/sentiment_analysis
 # http://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html

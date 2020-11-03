@@ -1,8 +1,6 @@
 import nltk
 import stanza
 import matplotlib.pyplot as plt
-from tqdm import tqdm
-
 
 # todo: Flair
 # todo - parsers: https://elitedatascience.com/python-nlp-libraries
