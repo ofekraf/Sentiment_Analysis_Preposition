@@ -15,13 +15,21 @@ class Analyzer:
     KWD_POS = 1
     STRETCHING_FUNC = 2
 
-    def __init__(self, list_of_files, delimiter):
+    def __init__(self, list_of_files, delimiter, should_log):
+        self.should_print_logs = should_log
+        self._print_log("starting Analyzer initialization")
         self.list_of_files = list_of_files
         self.delimiter = delimiter
         self.sentiment_modules = {}
         self.initialize_modules()
         self.coords = {}
         self._analysis_done = False
+        self._print_log("finished Analyzer initialization")
+
+    def _print_log(self, msg):
+        if self.should_print_logs:
+            print(msg)
+
 
     @classmethod
     def _get_sid(cls):
@@ -47,7 +55,7 @@ class Analyzer:
             print("Warning! you must first analyze before plotting! ")
             return
 
-        self.list_of_files = ["but_sentences", "however_sentences"]
+        self._print_log("starting plotting")
 
         fig, all_plots = plt.subplots(len(self.list_of_files),
                                       len(self.sentiment_modules))
@@ -65,9 +73,10 @@ class Analyzer:
                 all_plots[prop_idx, 0].yaxis.set_label_position("left")
 
         fig.show()
+        self._print_log("starting plotting")
 
     def analyze(self):
-        self.list_of_files = ["but_sentences", "however_sentences"]  # todo
+        self._print_log("starting analyzing")
         for file in self.list_of_files:
             self.coords[file] = {n: ([], []) for n in
                                  self.sentiment_modules.keys()}
@@ -87,6 +96,7 @@ class Analyzer:
                 print("line is :" + line)
                 raise e
         self._analysis_done = True
+        self._print_log("finished analyzing")
 
     @classmethod
     def calc_score(self, module, sentence):

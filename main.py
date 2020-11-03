@@ -4,6 +4,8 @@ from parse import Parse
 EXTRACT_PREPOSITION_SENTENCES = True
 RUN_ANALYSIS = True
 CLEAN_TWEETS = False
+PRINT_LOGS = False
+
 
 DELIMITER = "###---###"
 CHECKED_PREPOSITIONS = ["but", "although", "however"]
@@ -24,7 +26,7 @@ def main():
     if RUN_ANALYSIS:
         if not list_of_files:
             list_of_files = get_list_of_files(list_of_files)
-        analyz = Analyzer(list_of_files, DELIMITER)
+        analyz = Analyzer(list_of_files, DELIMITER, PRINT_LOGS)
         analyz.analyze()
         analyz.plot()
 
@@ -54,6 +56,7 @@ if __name__ == '__main__':
 
 # sentences taken from:
 # https://github.com/microsoft/ML-Server-Python-Samples/tree/master/microsoftml/202/data/sentiment_analysis
+# http://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html
 
 # https://raw.githubusercontent.com/sharmaroshan/Twitter-Sentiment-Analysis/master/test_tweets.csv
 # https://raw.githubusercontent.com/sharmaroshan/Twitter-Sentiment-Analysis/master/train_tweet.csv
