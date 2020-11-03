@@ -1,6 +1,5 @@
 import nltk
-from google.cloud import language_v1
-
+import stanza
 import matplotlib.pyplot as plt
 
 # todo: Flair
@@ -105,7 +104,16 @@ class Analyzer:
         self.sentiment_modules["TextBlob"] = (
             lambda x: TextBlob(x).sentiment, 0, lambda x: x * 5)
 
-        # client = language_v1.LanguageServiceClient()
-        # self.sentiment_modules["googleCloud"] =
-        # sentiment = client.analyze_sentiment(
-        #     request={'document': document}).document_sentiment
+        nlp = stanza.Pipeline(lang='en')
+        self.sentiment_modules["stanza"] = (
+            lambda x: {'s': nlp(x).sentences[0].sentiment}, 's',
+            stanza_normalizer
+        )
+
+
+def stanza_normalizer(sentiment):
+    # negative: 0
+    # neutral: 1
+    # positive: 2
+    switcher = {0: -3, 1: 0, 2: 3}
+    return switcher[sentiment]
