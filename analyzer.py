@@ -1,6 +1,8 @@
 import nltk
 import stanza
 import matplotlib.pyplot as plt
+from tqdm import tqdm
+
 
 # todo: Flair
 # todo - parsers: https://elitedatascience.com/python-nlp-libraries
@@ -50,21 +52,17 @@ class Analyzer:
         fig, all_plots = plt.subplots(len(self.list_of_files),
                                       len(self.sentiment_modules))
 
-        # all_plots[0, 0].set_title('Axis [0,0]') #todo
-        # all_plots[0, 1].plot(x, y, 'tab:orange')
-        # all_plots[0, 1].set_title('Axis [0,1]')
-
         for mod_idx, module in enumerate(self.sentiment_modules):
             all_plots[0, mod_idx].set_title(module)
             for prop_idx, file_name in enumerate(self.list_of_files):
-                all_plots[mod_idx, prop_idx].scatter(
+                all_plots[prop_idx, mod_idx].scatter(
                     self.coords[file_name][module][0],
                     self.coords[file_name][module][1])
-                all_plots[mod_idx, prop_idx].grid()
-                all_plots[mod_idx, prop_idx].axis(xmin=-5, xmax=5,
+                all_plots[prop_idx, mod_idx].grid()
+                all_plots[prop_idx, mod_idx].axis(xmin=-5, xmax=5,
                                                   ymin=-5, ymax=5)
-                all_plots[mod_idx, 0].set_ylabel(file_name.split("_")[0])
-                all_plots[mod_idx, 0].yaxis.set_label_position("left")
+                all_plots[prop_idx, 0].set_ylabel(file_name.split("_")[0])
+                all_plots[prop_idx, 0].yaxis.set_label_position("left")
 
         fig.show()
 
@@ -104,7 +102,7 @@ class Analyzer:
         self.sentiment_modules["TextBlob"] = (
             lambda x: TextBlob(x).sentiment, 0, lambda x: x * 5)
 
-        nlp = stanza.Pipeline(lang='en')
+        nlp = stanza.Pipeline(lang='en', processors='tokenize,sentiment')
         self.sentiment_modules["stanza"] = (
             lambda x: {'s': nlp(x).sentences[0].sentiment}, 's',
             stanza_normalizer

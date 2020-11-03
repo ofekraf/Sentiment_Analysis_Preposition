@@ -7,7 +7,7 @@ class Parse:
         self.delimiter = delimiter
 
     def _parse_raw_sentences(self):
-        counter = 0
+        discarded_lines = []
         with open("RAW_SENTENCES", 'r') as file_reader:
             for line in file_reader:
                 if '\t' in line:
@@ -17,22 +17,22 @@ class Parse:
                         splited_line = tuple(line.lower().split(preposition))
                         if len(splited_line) != 2 or len(
                                 splited_line[0]) < 2 or len(
-                                splited_line[1]) < 2:
+                            splited_line[1]) < 2:
                             # todo - perhaps limit to longer sentences?
-                            print(line)
-                            counter += 1
+                            discarded_lines.append(line)
                             continue
-
-                            # in the corpus of 3000 sentences,
-                            # this has occurred once with the sentence:
-                            # """ " But "Storm Trooper" is not even bad enough
-                            # to make it to the list of wonderfully terrible
-                            # movies"""
-
                         self.preposition_split_sentences[
                             preposition[1:-1]].append(
                             splited_line)
-        print(counter)
+        self.log_discarded_lines(discarded_lines)
+
+    def log_discarded_lines(self, discarded_lines):
+        with open("discarded_lines.log", 'w') as writer:
+            writer.write("amount of discarded lines: {} \n".format(
+                len(discarded_lines)))
+            for line in discarded_lines:
+                line = line + '\n' if '\n' not in line else line
+                writer.write(line)
 
     def extract_preposition_sentences(self):
         self._parse_raw_sentences()
@@ -42,7 +42,7 @@ class Parse:
             with open(list_of_files[-1], 'w') as writer:
                 for tup in self.preposition_split_sentences[prep]:
                     to_write = tup[0] + self.delimiter + tup[1]
-                    to_write = to_write +'\n' if '\n' not in to_write else to_write
+                    to_write = to_write + '\n' if '\n' not in to_write else to_write
                     writer.write(to_write)
         return list_of_files
 
