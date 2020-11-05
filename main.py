@@ -1,8 +1,10 @@
 from analyzer import Analyzer
 from parse import Parse
+from termcolor import colored
+
 
 EXTRACT_PREPOSITION_SENTENCES = False
-RUN_ANALYSER = True
+RUN_ANALYSER = False
 ANALYZE_DATA_FROM_SCRATCH = False
 CLEAN_TWEETS = False
 CLEAN_MOVIE_LINES = False
@@ -34,6 +36,9 @@ def main():
         analyz = Analyzer(list_of_files, DELIMITER, PRINT_LOGS, ANALYZE_DATA_FROM_SCRATCH)
         analyz.analyze()
         analyz.plot()
+    else:
+        print(colored("Warning: analyzer not run!", 'red'))
+
 
 
 def get_list_of_files(list_of_files):
@@ -65,17 +70,6 @@ def clean_movie_text_lines():
 
 if __name__ == '__main__':
     main()
-
-
-# sentences taken from:
-# https://github.com/microsoft/ML-Server-Python-Samples/tree/master/microsoftml/202/data/sentiment_analysis
-# http://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html
-
-# https://raw.githubusercontent.com/sharmaroshan/Twitter-Sentiment-Analysis/master/test_tweets.csv
-# https://raw.githubusercontent.com/sharmaroshan/Twitter-Sentiment-Analysis/master/train_tweet.csv
-# out of these i only took tweets that :
-#      1.did not contain '#' or '@'
-#      2. contained only utf8 characters (mainly, no emojis)
 
 # todo:
 # https://github.com/niderhoff/nlp-datasets
