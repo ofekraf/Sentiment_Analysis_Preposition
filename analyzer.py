@@ -68,7 +68,7 @@ class Analyzer:
                 all_plots[prop_idx, 0].set_ylabel(file_name.split("_")[0])
                 all_plots[prop_idx, 0].yaxis.set_label_position("left")
 
-        fig.title("Sentiment")
+        fig.suptitle("Sentiment of first vs second part of sentences, parted  by Prepositiosn")
         fig.show()
         if UPDATE_SHOWN_IMAGE:
             plt.savefig('graphs_matrix.png')
