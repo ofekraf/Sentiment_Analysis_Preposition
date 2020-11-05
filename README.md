@@ -27,5 +27,6 @@ from the tweets dataset, I only took tweets that followed these two criteria:
 2.	The tweet contained only utf8 characters (mainly, no emojis)
 
 ## Graphs
+![Image of Yaktocat](preposition_Sentiment_graphs.png?raw=true "Title")
 
 
