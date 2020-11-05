@@ -73,7 +73,7 @@ class Analyzer:
             "Sentiment of first vs second part of sentences, parted  by Prepositiosn")
         fig.show()
         if UPDATE_SHOWN_IMAGE:
-            plt.savefig('graphs_matrix.png')
+            fig.savefig('preposition_Sentiment_graphs.png')
         self._print_log("finised plotting")
 
     def analyze(self):

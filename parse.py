@@ -10,7 +10,8 @@ class Parse:
 
     def _parse_raw_sentences(self):
         discarded_lines = []
-        with open(os.path.join("sentences","RAW_SENTENCES"), 'r') as file_reader:
+        # with open(os.path.join("sentences","RAW_SENTENCES"), 'r') as file_reader:
+        with open("RAW_SENTENCES", 'r') as file_reader:
             for line in file_reader:
                 if '\t' in line:
                     line = line[:line.index('\t')]
@@ -29,7 +30,7 @@ class Parse:
         self.log_discarded_lines(discarded_lines)
 
     def log_discarded_lines(self, discarded_lines):
-        with open(os.path.join("sentences","discarded_lines.log"), 'w') as writer:
+        with open("discarded_lines.log", 'w') as writer:
             writer.write("amount of discarded lines: {} \n".format(
                 len(discarded_lines)))
             for line in discarded_lines:
