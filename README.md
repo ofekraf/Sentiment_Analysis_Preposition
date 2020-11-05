@@ -1,5 +1,5 @@
 # Sentiment_Analysis_Preposition
-This project aims to use Sentiment analysis tools to gain perspective on the meaning og prepositions in the English language. 
+This project aims to use Sentiment analysis tools to gain perspective on the meaning of prepositions in the English language. 
 
 ## Sentiment Analysis Models used
 for ease of reading, every sentiment module's returned values have been 
