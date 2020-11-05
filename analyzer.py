@@ -1,6 +1,7 @@
 import nltk
 import stanza
 import matplotlib.pyplot as plt
+import json
 
 # todo: Flair
 # todo - parsers: https://elitedatascience.com/python-nlp-libraries
@@ -13,9 +14,10 @@ class Analyzer:
     KWD_POS = 1
     STRETCHING_FUNC = 2
 
-    def __init__(self, list_of_files, delimiter, should_log):
+    def __init__(self, list_of_files, delimiter, should_log, calculate):
         self.should_print_logs = should_log
         self._print_log("starting Analyzer initialization")
+        self.calculate_figs = calculate
         self.list_of_files = list_of_files
         self.delimiter = delimiter
         self.sentiment_modules = {}
@@ -27,7 +29,6 @@ class Analyzer:
     def _print_log(self, msg):
         if self.should_print_logs:
             print(msg)
-
 
     @classmethod
     def _get_sid(cls):
@@ -75,26 +76,34 @@ class Analyzer:
 
     def analyze(self):
         self._print_log("starting analyzing")
+        if not self.calculate_figs:
+            self.load_coords()
+            self._analysis_done = True
+            self._print_log("finished analyzing")
+            return
         for file in self.list_of_files:
-            self.coords[file] = {n: ([], []) for n in
+            self.coords[file] = {n: ([], [], []) for n in
                                  self.sentiment_modules.keys()}
-            try:
-                with open(file, 'r') as reader:
-                    for line in reader:
-                        first, sec = line.split(self.delimiter)
-
-                        first = self.clean(first)
-                        sec = self.clean(sec)
-                        for mod_name, module in self.sentiment_modules.items():
-                            self.coords[file][mod_name][0].append(
-                                self.calc_score(module, first))
-                            self.coords[file][mod_name][1].append(
-                                self.calc_score(module, sec))
-            except ValueError as e:
-                print("line is :" + line)
-                raise e
+            self.iterate_file_sentiment(file)
+            with open(file + '_sentiments.json', 'w') as f:
+                json.dump(self.coords[file], f)
         self._analysis_done = True
         self._print_log("finished analyzing")
+
+    def iterate_file_sentiment(self, file):
+        with open(file, 'r') as reader:
+            for line in reader:
+                first, sec = line.split(self.delimiter)
+
+                first = self.clean(first)
+                sec = self.clean(sec)
+                sentence = " ".join([first, file.split("_")[0], sec])
+                for mod_name, module in self.sentiment_modules.items():
+                    self.coords[file][mod_name][0].append(
+                        self.calc_score(module, first))
+                    self.coords[file][mod_name][1].append(
+                        self.calc_score(module, sec))
+                    self.coords[file][mod_name][2].append(sentence)
 
     @classmethod
     def calc_score(self, module, sentence):
@@ -115,6 +124,13 @@ class Analyzer:
             lambda x: {'s': nlp(x).sentences[0].sentiment}, 's',
             stanza_normalizer
         )
+
+    def load_coords(self):
+        for file in self.list_of_files:
+            self.coords[file] = {module: ([], [], []) for module in
+                                 self.sentiment_modules.keys()}
+            with open(file + '_sentiments.json') as json_file:
+                self.coords[file] = json.load(json_file)
 
 
 def stanza_normalizer(sentiment):

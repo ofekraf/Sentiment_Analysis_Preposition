@@ -2,7 +2,8 @@ from analyzer import Analyzer
 from parse import Parse
 
 EXTRACT_PREPOSITION_SENTENCES = False
-RUN_ANALYSIS = True
+RUN_ANALYSER = True
+ANALYZE_DATA_FROM_SCRATCH = False
 CLEAN_TWEETS = False
 CLEAN_MOVIE_LINES = False
 PRINT_LOGS = False
@@ -27,10 +28,10 @@ def main():
         with open("list_of_files", "w") as writer:
             writer.writelines(file + "\n" for file in list_of_files)
 
-    if RUN_ANALYSIS:
+    if RUN_ANALYSER:
         if not list_of_files:
             list_of_files = get_list_of_files(list_of_files)
-        analyz = Analyzer(list_of_files, DELIMITER, PRINT_LOGS)
+        analyz = Analyzer(list_of_files, DELIMITER, PRINT_LOGS, ANALYZE_DATA_FROM_SCRATCH)
         analyz.analyze()
         analyz.plot()
 
@@ -64,6 +65,8 @@ def clean_movie_text_lines():
 
 if __name__ == '__main__':
     main()
+
+
 # sentences taken from:
 # https://github.com/microsoft/ML-Server-Python-Samples/tree/master/microsoftml/202/data/sentiment_analysis
 # http://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html
@@ -73,3 +76,6 @@ if __name__ == '__main__':
 # out of these i only took tweets that :
 #      1.did not contain '#' or '@'
 #      2. contained only utf8 characters (mainly, no emojis)
+
+# todo:
+# https://github.com/niderhoff/nlp-datasets
