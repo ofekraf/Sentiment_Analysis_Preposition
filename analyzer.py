@@ -2,6 +2,7 @@ import nltk
 import stanza
 import matplotlib.pyplot as plt
 import json
+import os
 from RUNNING_VARIABLES import *
 
 FIRST_TIME = False
@@ -61,14 +62,15 @@ class Analyzer:
                 all_plots[prop_idx, mod_idx].scatter(
                     self.coords[file_name][module][0],
                     self.coords[file_name][module][1],
-                    color=colors[prop_idx%len(colors)])
+                    color=colors[prop_idx % len(colors)])
                 all_plots[prop_idx, mod_idx].grid()
                 all_plots[prop_idx, mod_idx].axis(xmin=-5, xmax=5,
                                                   ymin=-5, ymax=5)
                 all_plots[prop_idx, 0].set_ylabel(file_name.split("_")[0])
                 all_plots[prop_idx, 0].yaxis.set_label_position("left")
 
-        fig.suptitle("Sentiment of first vs second part of sentences, parted  by Prepositiosn")
+        fig.suptitle(
+            "Sentiment of first vs second part of sentences, parted  by Prepositiosn")
         fig.show()
         if UPDATE_SHOWN_IMAGE:
             plt.savefig('graphs_matrix.png')
@@ -85,13 +87,14 @@ class Analyzer:
             self.coords[file] = {n: ([], [], []) for n in
                                  self.sentiment_modules.keys()}
             self.iterate_file_sentiment(file)
-            with open(file + '_sentiments.json', 'w') as f:
+            with open(os.path.join("sentiments", file + '_sentiments.json'),
+                      'w') as f:
                 json.dump(self.coords[file], f)
         self._analysis_done = True
         self._print_log("finished analyzing")
 
     def iterate_file_sentiment(self, file):
-        with open(file, 'r') as reader:
+        with open(os.path.join("sentences", file), 'r') as reader:
             for line in reader:
                 first, sec = line.split(DELIMITER)
 
@@ -129,7 +132,8 @@ class Analyzer:
         for file in self.list_of_files:
             self.coords[file] = {module: ([], [], []) for module in
                                  self.sentiment_modules.keys()}
-            with open(file + '_sentiments.json') as json_file:
+            with open(os.path.join("sentiments",
+                                   file + '_sentiments.json')) as json_file:
                 self.coords[file] = json.load(json_file)
 
 

@@ -1,3 +1,5 @@
+import os
+
 class Parse:
 
     def __init__(self, prepositions, delimiter):
@@ -8,7 +10,7 @@ class Parse:
 
     def _parse_raw_sentences(self):
         discarded_lines = []
-        with open("RAW_SENTENCES", 'r') as file_reader:
+        with open(os.path.join("sentences","RAW_SENTENCES"), 'r') as file_reader:
             for line in file_reader:
                 if '\t' in line:
                     line = line[:line.index('\t')]
@@ -27,7 +29,7 @@ class Parse:
         self.log_discarded_lines(discarded_lines)
 
     def log_discarded_lines(self, discarded_lines):
-        with open("discarded_lines.log", 'w') as writer:
+        with open(os.path.join("sentences","discarded_lines.log"), 'w') as writer:
             writer.write("amount of discarded lines: {} \n".format(
                 len(discarded_lines)))
             for line in discarded_lines:
@@ -36,15 +38,13 @@ class Parse:
 
     def extract_preposition_sentences(self):
         self._parse_raw_sentences()
-        list_of_files = []
         for prep in self.preposition_split_sentences:
-            list_of_files.append(prep + "_sentences")
-            with open(list_of_files[-1], 'w') as writer:
+            cur_file = prep + "_sentences"
+            with open(os.path.join("sentences",cur_file), 'w') as writer:
                 for tup in self.preposition_split_sentences[prep]:
                     to_write = tup[0] + self.delimiter + tup[1]
                     to_write = to_write + '\n' if '\n' not in to_write else to_write
                     writer.write(to_write)
-        return list_of_files
 
     def _get_substring_propositions(self):
         substrings = []
