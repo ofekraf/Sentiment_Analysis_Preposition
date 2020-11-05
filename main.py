@@ -1,19 +1,7 @@
 from analyzer import Analyzer
 from parse import Parse
 from termcolor import colored
-
-
-EXTRACT_PREPOSITION_SENTENCES = False
-RUN_ANALYSER = False
-ANALYZE_DATA_FROM_SCRATCH = False
-CLEAN_TWEETS = False
-CLEAN_MOVIE_LINES = False
-PRINT_LOGS = False
-
-
-DELIMITER = "###---###"
-CHECKED_PREPOSITIONS = ["but", "although", "however", "even though"]
-
+from RUNNING_VARIABLES import *
 
 def main():
     list_of_files = None
@@ -33,7 +21,7 @@ def main():
     if RUN_ANALYSER:
         if not list_of_files:
             list_of_files = get_list_of_files(list_of_files)
-        analyz = Analyzer(list_of_files, DELIMITER, PRINT_LOGS, ANALYZE_DATA_FROM_SCRATCH)
+        analyz = Analyzer(list_of_files)
         analyz.analyze()
         analyz.plot()
     else:
@@ -70,6 +58,10 @@ def clean_movie_text_lines():
 
 if __name__ == '__main__':
     main()
+
+
+# todo: Flair
+# todo - parsers: https://elitedatascience.com/python-nlp-libraries
 
 # todo:
 # https://github.com/niderhoff/nlp-datasets

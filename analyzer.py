@@ -2,9 +2,7 @@ import nltk
 import stanza
 import matplotlib.pyplot as plt
 import json
-
-# todo: Flair
-# todo - parsers: https://elitedatascience.com/python-nlp-libraries
+from RUNNING_VARIABLES import *
 
 FIRST_TIME = False
 
@@ -14,12 +12,9 @@ class Analyzer:
     KWD_POS = 1
     STRETCHING_FUNC = 2
 
-    def __init__(self, list_of_files, delimiter, should_log, calculate):
-        self.should_print_logs = should_log
+    def __init__(self, list_of_files):
         self._print_log("starting Analyzer initialization")
-        self.calculate_figs = calculate
         self.list_of_files = list_of_files
-        self.delimiter = delimiter
         self.sentiment_modules = {}
         self.initialize_modules()
         self.coords = {}
@@ -27,7 +22,7 @@ class Analyzer:
         self._print_log("finished Analyzer initialization")
 
     def _print_log(self, msg):
-        if self.should_print_logs:
+        if PRINT_LOGS:
             print(msg)
 
     @classmethod
@@ -59,24 +54,29 @@ class Analyzer:
         fig, all_plots = plt.subplots(len(self.list_of_files),
                                       len(self.sentiment_modules))
 
+        colors = ['red', 'blue', 'green', 'purple']
         for mod_idx, module in enumerate(self.sentiment_modules):
             all_plots[0, mod_idx].set_title(module)
             for prop_idx, file_name in enumerate(self.list_of_files):
                 all_plots[prop_idx, mod_idx].scatter(
                     self.coords[file_name][module][0],
-                    self.coords[file_name][module][1])
+                    self.coords[file_name][module][1],
+                    color=colors[prop_idx%len(colors)])
                 all_plots[prop_idx, mod_idx].grid()
                 all_plots[prop_idx, mod_idx].axis(xmin=-5, xmax=5,
                                                   ymin=-5, ymax=5)
                 all_plots[prop_idx, 0].set_ylabel(file_name.split("_")[0])
                 all_plots[prop_idx, 0].yaxis.set_label_position("left")
 
+        fig.title("Sentiment")
         fig.show()
-        self._print_log("starting plotting")
+        if UPDATE_SHOWN_IMAGE:
+            plt.savefig('graphs_matrix.png')
+        self._print_log("finised plotting")
 
     def analyze(self):
         self._print_log("starting analyzing")
-        if not self.calculate_figs:
+        if not ANALYZE_DATA_FROM_SCRATCH:
             self.load_coords()
             self._analysis_done = True
             self._print_log("finished analyzing")
@@ -93,7 +93,7 @@ class Analyzer:
     def iterate_file_sentiment(self, file):
         with open(file, 'r') as reader:
             for line in reader:
-                first, sec = line.split(self.delimiter)
+                first, sec = line.split(DELIMITER)
 
                 first = self.clean(first)
                 sec = self.clean(sec)
