@@ -3,6 +3,7 @@ import stanza
 import matplotlib.pyplot as plt
 import json
 import os
+import string
 from RUNNING_VARIABLES import *
 
 FIRST_TIME = False
@@ -66,7 +67,7 @@ class Analyzer:
                 all_plots[prop_idx, mod_idx].grid()
                 all_plots[prop_idx, mod_idx].axis(xmin=-5, xmax=5,
                                                   ymin=-5, ymax=5)
-                all_plots[prop_idx, 0].set_ylabel(file_name.split("_")[0])
+                all_plots[prop_idx, 0].set_ylabel(string.capwords(file_name.split("_")[0]))
                 all_plots[prop_idx, 0].yaxis.set_label_position("left")
 
         fig.suptitle(
@@ -130,11 +131,12 @@ class Analyzer:
 
     def load_coords(self):
         for file in self.list_of_files:
-            self.coords[file] = {module: ([], [], []) for module in
-                                 self.sentiment_modules.keys()}
-            with open(os.path.join("sentiments",
-                                   file + '_sentiments.json')) as json_file:
-                self.coords[file] = json.load(json_file)
+            self.coords[file] = self.get_coords_file(file)
+
+    @staticmethod
+    def get_coords_file(file):
+        with open(os.path.join("sentiments",file + '_sentiments.json')) as json_file:
+            return json.load(json_file)
 
 
 def stanza_normalizer(sentiment):
