@@ -15,8 +15,8 @@ def main():
         p = Parse(CHECKED_PREPOSITIONS, DELIMITER)
         p.extract_preposition_sentences()
 
+    list_of_files = os.listdir("sentences")
     if RUN_ANALYSER:
-        list_of_files = os.listdir("sentences")
         analyz = Analyzer(list_of_files)
         analyz.analyze()
         analyz.plot()
