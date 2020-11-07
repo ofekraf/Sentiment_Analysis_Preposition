@@ -1,21 +1,30 @@
 import os
+from RUNNING_VARIABLES import *
+
 
 class Parse:
 
     def __init__(self, prepositions, delimiter):
+        self._log("initializing Parser")
         self.prepositions = prepositions
         self.preposition_split_sentences = {prep: [] for prep in
                                             self.prepositions}
         self.delimiter = delimiter
+        self._log("finished initialization")
 
     def _parse_raw_sentences(self):
         discarded_lines = []
         # with open(os.path.join("sentences","RAW_SENTENCES"), 'r') as file_reader:
+        counter = 0
         with open("RAW_SENTENCES", 'r') as file_reader:
             for line in file_reader:
                 if '\t' in line:
                     line = line[:line.index('\t')]
                 for preposition in self._get_substring_propositions():
+                    if len(self.preposition_split_sentences[preposition[1:-1]]) > 100:
+                        counter += 1
+                        if (counter % 50) != 0:
+                            continue
                     if preposition in line.lower():
                         splited_line = tuple(line.lower().split(preposition))
                         if len(splited_line) != 2 or len(
@@ -38,6 +47,7 @@ class Parse:
                 writer.write(line)
 
     def extract_preposition_sentences(self):
+        self._log("extracting prepositional sentences")
         self._parse_raw_sentences()
         for prep in self.preposition_split_sentences:
             cur_file = prep + "_sentences"
@@ -46,6 +56,8 @@ class Parse:
                     to_write = tup[0] + self.delimiter + tup[1]
                     to_write = to_write + '\n' if '\n' not in to_write else to_write
                     writer.write(to_write)
+            self._log("for preposition {} wrote {} lines".format(prep,len(self.preposition_split_sentences[prep])))
+        self._log("finished writing prepositional sentences")
 
     def _get_substring_propositions(self):
         substrings = []
@@ -56,3 +68,7 @@ class Parse:
             substrings.append("," + prop + ",")
             substrings.append("." + prop + " ")
         return substrings
+
+    def _log(self, param):
+        if PRINT_LOGS:
+            print(param)
