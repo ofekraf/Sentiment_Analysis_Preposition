@@ -64,7 +64,7 @@ class Analyzer:
             all_plots[0, mod_idx].set_title(module)
             for prop_idx, file_name in enumerate(self.list_of_files):
 
-                all_plots[prop_idx, mod_idx].scatter(
+                scatter = all_plots[prop_idx, mod_idx].scatter(
                     self.coords[file_name][module][0],
                     self.coords[file_name][module][1],
                     color=colors[prop_idx % len(colors)])
@@ -78,17 +78,17 @@ class Analyzer:
                 all_plots[prop_idx, 0].yaxis.set_label_position("left")
 
                 tooltip = mpld3.plugins.PointLabelTooltip(
-                    all_plots[prop_idx, mod_idx],
+                    scatter,
                     labels=self.coords[file_name][module][2])
                 mpld3.plugins.connect(fig, tooltip)
 
-        # mpld3.show()
-        mpld3.save_html(fig,
-                        "preposition_Sentiment_graphs.html")
+        mpld3.show()
         self._print_log("finised plotting")
 
         if UPDATE_SHOWN_IMAGE:
             self._print_log("saving fig")
+            mpld3.save_html(fig,
+                            "preposition_Sentiment_graphs.html")
             fig.savefig('preposition_Sentiment_graphs.png')
 
     def analyze(self):
