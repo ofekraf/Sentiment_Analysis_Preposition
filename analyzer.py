@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import json
 import os
 import string
+import mpld3
 from RUNNING_VARIABLES import *
 
 FIRST_TIME = False
@@ -55,27 +56,40 @@ class Analyzer:
 
         fig, all_plots = plt.subplots(len(self.list_of_files),
                                       len(self.sentiment_modules))
+        fig.suptitle(
+            "Sentiment of first vs second part of sentences, parted  by Prepositiosn")
 
         colors = ['red', 'blue', 'green', 'purple']
         for mod_idx, module in enumerate(self.sentiment_modules):
             all_plots[0, mod_idx].set_title(module)
             for prop_idx, file_name in enumerate(self.list_of_files):
-                all_plots[prop_idx, mod_idx].scatter(
+
+                scatter = all_plots[prop_idx, mod_idx].scatter(
                     self.coords[file_name][module][0],
                     self.coords[file_name][module][1],
                     color=colors[prop_idx % len(colors)])
-                all_plots[prop_idx, mod_idx].grid()
+                all_plots[prop_idx, mod_idx].grid(which='both', axis='both',
+                                                  color='grey',
+                                                  linestyle='solid')
                 all_plots[prop_idx, mod_idx].axis(xmin=-5, xmax=5,
                                                   ymin=-5, ymax=5)
-                all_plots[prop_idx, 0].set_ylabel(string.capwords(file_name.split("_")[0]))
+                all_plots[prop_idx, 0].set_ylabel(
+                    string.capwords(file_name.split("_")[0]))
                 all_plots[prop_idx, 0].yaxis.set_label_position("left")
 
-        fig.suptitle(
-            "Sentiment of first vs second part of sentences, parted  by Prepositiosn")
-        fig.show()
-        if UPDATE_SHOWN_IMAGE:
-            fig.savefig('preposition_Sentiment_graphs.png')
+                tooltip = mpld3.plugins.PointLabelTooltip(
+                    scatter,
+                    labels=self.coords[file_name][module][2])
+                mpld3.plugins.connect(fig, tooltip)
+
+        mpld3.show()
         self._print_log("finised plotting")
+
+        if UPDATE_SHOWN_IMAGE:
+            self._print_log("saving fig")
+            mpld3.save_html(fig,
+                            "preposition_Sentiment_graphs.html")
+            fig.savefig('preposition_Sentiment_graphs.png')
 
     def analyze(self):
         self._print_log("starting analyzing")
@@ -135,7 +149,8 @@ class Analyzer:
 
     @staticmethod
     def get_coords_file(file):
-        with open(os.path.join("sentiments",file + '_sentiments.json')) as json_file:
+        with open(os.path.join("sentiments",
+                               file + '_sentiments.json')) as json_file:
             return json.load(json_file)
 
 
