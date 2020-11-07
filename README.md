@@ -8,9 +8,9 @@ The majority of studies to this date have used linguistics tools to pursue the s
 
 A minority of studies aim to do he opposite: use computers to better study how humans interact with themselves. This humble project aims to do so.   
 ###Goals of this project
-A preposition is a word used to link nouns, pronouns, or phrases to other words within a sentence. Many such words exist 
+A preposition is a word used to link nouns, pronouns, or phrases to other words within a sentence. Many such words exist, for example: "both", "and", "neither" and so on.
 
-
+Here, I aimed to empirically look at a specific subsection of prepositions: 
 
 Some prefer the use of the word 'conjunction' to  describe the  connection of two  clauses, though to avoid the confusion with the boolean meaning, i will stick to the  terminology of prepositions.
 
@@ -44,9 +44,10 @@ from the tweets dataset, I only took tweets that followed these two criteria:
 1	.the tweet did not contain '#' or '@'
 2.	The tweet contained only utf8 characters (mainly, no emojis)
 
-##notes about coding edge cases
+## Edge cases
 1. Splitting the sentences, i only used sentences that had 2 or more words in every clause. Words here are defined as characters split by a space character - " ". 
-2. some prepositions are much more common then others in the text corpora i've used. as such, i've limited the amount of points to be shown in the graph,   
+
+2. Some prepositions are much more common then others in the text corpora i've used. as such, i've limited the amount of points to be shown in the graph,
 
 ## Graphs
 ![Image of all graphs](preposition_Sentiment_graphs.png?raw=true "Image of all graphs")

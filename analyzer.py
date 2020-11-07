@@ -63,24 +63,27 @@ class Analyzer:
         for mod_idx, module in enumerate(self.sentiment_modules):
             all_plots[0, mod_idx].set_title(module)
             for prop_idx, file_name in enumerate(self.list_of_files):
-
+                color = colors[prop_idx % len(colors)]
                 scatter = all_plots[prop_idx, mod_idx].scatter(
                     self.coords[file_name][module][0],
                     self.coords[file_name][module][1],
-                    color=colors[prop_idx % len(colors)])
+                    color=color)
                 all_plots[prop_idx, mod_idx].grid(which='both', axis='both',
                                                   color='grey',
                                                   linestyle='solid')
                 all_plots[prop_idx, mod_idx].axis(xmin=-5, xmax=5,
                                                   ymin=-5, ymax=5)
                 all_plots[prop_idx, 0].set_ylabel(
-                    string.capwords(file_name.split("_")[0]))
+                    string.capwords(file_name.split("_")[0]), fontsize=10, color=color)
                 all_plots[prop_idx, 0].yaxis.set_label_position("left")
 
                 tooltip = mpld3.plugins.PointLabelTooltip(
                     scatter,
                     labels=self.coords[file_name][module][2])
                 mpld3.plugins.connect(fig, tooltip)
+
+
+        fig.show()
 
         if UPDATE_SHOWN_IMAGE:
             self._print_log("saving fig")
