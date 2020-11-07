@@ -82,14 +82,17 @@ class Analyzer:
                     labels=self.coords[file_name][module][2])
                 mpld3.plugins.connect(fig, tooltip)
 
-        mpld3.show()
-        self._print_log("finised plotting")
-
         if UPDATE_SHOWN_IMAGE:
             self._print_log("saving fig")
             mpld3.save_html(fig,
                             "preposition_Sentiment_graphs.html")
             fig.savefig('preposition_Sentiment_graphs.png')
+
+        if SHOW_INTERACTIVE_IMAGE:
+            mpld3.show()
+
+        self._print_log("finised plotting")
+
 
     def analyze(self):
         self._print_log("starting analyzing")
