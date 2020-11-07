@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="761e6798-50a4-4a79-9d96-65a375d31c77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+            <state relative-caret-position="206">
+              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -49,8 +50,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-500">
-                <caret line="9" column="9" lean-forward="true" selection-end-line="62" selection-end-column="14" />
+              <first_editor relative-caret-position="292">
+                <caret line="77" selection-start-line="77" selection-end-line="77" />
               </first_editor>
               <second_editor />
             </state>
@@ -77,8 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tq</find>
-      <find>\n</find>
       <find>print(</find>
       <find>should_print_logs</find>
       <find>analyzing</find>
@@ -107,6 +106,8 @@
       <find>log_discarded_lines</find>
       <find>_should_dis_regard_line</find>
       <find>font</find>
+      <find>disca</find>
+      <find>prop</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -280,7 +281,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603191871821</updated>
       <workItem from="1603191873251" duration="84139000" />
-      <workItem from="1604736701039" duration="7221000" />
+      <workItem from="1604736701039" duration="8874000" />
     </task>
     <task id="LOCAL-00001" summary="added raw_sentences and their respective parsing into a readable format">
       <created>1603204933415</created>
@@ -506,11 +507,18 @@
       <option name="project" value="LOCAL" />
       <updated>1604748521816</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added files for data on new propositions">
+      <created>1604751136151</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1604751136151</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91360000" />
+    <option name="totallyTimeSpent" value="93013000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -525,7 +533,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20361991" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20361991" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -544,7 +552,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" sideWeight="0.7470449" visible="true" weight="0.26395175" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.7470449" weight="0.19607843" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="4" sideWeight="0.25295508" side_tool="true" weight="0.16591252" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
@@ -553,7 +561,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first plotting + axes + stretching of NLTK" />
     <MESSAGE value="baseline for multiple plots" />
     <MESSAGE value="pep8" />
     <MESSAGE value="added tweets sentences" />
@@ -578,7 +585,8 @@
     <MESSAGE value="refractored code for Parsing of raw sentences" />
     <MESSAGE value="added link to html file of graph" />
     <MESSAGE value="added &quot;even though&quot; and &quot;and yet&quot; to characterized words" />
-    <option name="LAST_COMMIT_MESSAGE" value="added &quot;even though&quot; and &quot;and yet&quot; to characterized words" />
+    <MESSAGE value="added files for data on new propositions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added files for data on new propositions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -808,16 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -842,11 +840,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-500">
-            <caret line="9" column="9" lean-forward="true" selection-end-line="62" selection-end-column="14" />
+          <first_editor relative-caret-position="292">
+            <caret line="77" selection-start-line="77" selection-end-line="77" />
           </first_editor>
           <second_editor />
         </state>
