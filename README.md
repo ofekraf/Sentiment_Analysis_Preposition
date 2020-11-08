@@ -7,11 +7,13 @@ Natural language processing (NLP) is a subfield of linguistics, computer science
 The majority of studies to this date have used linguistics tools to pursue the study of computer science, that is to say: develop smarter computers, able to interact better with humans.
 
 A minority of studies aim to do he opposite: use computers to better study how humans interact with themselves. This humble project aims to do so.   
-### Goals
+
+### Prepositions
 A preposition is a word used to link nouns, pronouns, or phrases to other words within a sentence. Many such words exist, for example: "both", "and", "neither" and so on.
 
 Some prefer the use of the word 'conjunction' to  describe the  connection of two  clauses, though to avoid the confusion with the boolean meaning, i will stick to the  terminology of prepositions.
 
+### Goals
 Here, I aimed to empirically look at a specific subsection of prepositions: preposition that (at least intuitively) denote a contradiction of sorts. for example:
 
 - "I like apples, but this apple is rotten"
@@ -24,11 +26,34 @@ This study aimes to examine the assumption that such prepositions do indeed deno
 
 ## Method
 
-TBD
+### TL;DR 
+Using Sentiment analysis models, I compared the sentiment of the first clause of a sentence, up to but not including the preposition (henceforth - "prefix"), and the sentiment of the latter part of the clause (henceforth - "suffix"). Plotting both sentiment scores, over different prepositions and different pre-trained sentiment analysis models, the I plotted the [graph below](###Graphs).     
 
+### Sentiment Analysis - a (very) brief overview
+Sentiment analysis is a use of natural language processing tools for text analysis. in particular it aims to extract, quantify, and study affective states and subjective information. 
+Sentiment analysis is widely applied to voice of the customer materials such as reviews and survey responses, online and social media, and healthcare materials for applications that range from marketing to customer service to clinical medicine.
 
-## Sentiment Analysis Models
-for ease of reading, every sentiment module's returned values have been 
+In this study, all Sentiment analysis tools that have been used point to either a positive sentiment, 
+or a negative one. some of the tools quantify just how "positive" negative the sentiment is, assigning it a numerical number. For the ease of the reader, 
+I have normalized all analysis to point to the same numerical range: from -5 to 5, -5 being the most negative sentiment, and 5 being the most positive.
+
+Most Sentiment analysis tools (among them all the tools used here) use Machine learning techniques to assign their values. following is a briefs description of how such techniques work:
+First, a large corpora of text is manually tagged. usually on a sentence level, for positive or negative sentences. 
+this large chunk of text is divided into a training set, and a test set. from both, different features are extracted. such features may include the existence or absence of certain words, certain grammatical structures, the presence of negation and  its scope and so on. 
+These in turn help the machine learning algorithm to associate different features with different positive\negative tags.
+after converging on a suitable function representation for the training set, this function is tested on the test set. 
+
+This short depiction of Current day Sentiment analysis is important for (at least) the following two exclaimers:
+1. Sentiment analysis models Tend to be domain specific. that is to say, they relay heavily on the textual domain on which they were trained. 
+A sentiment analysis model that has been trained on product reviews is not expected to have good results on quotes from movies. 
+Note I aimed to handle this by using multiple different models, trained on different corpora, more on this below.
+(nltk  and textblob - on social media and stanza on [Universal dependency](https://universaldependencies.org/) dataset qhich includes both wikipedia articles and news media)
+
+2. NLP in general, and sentiment analysis in particular still face numerous challenges: identifying sarcasm and Cynicism, refining negation scope, extending modules to unrecognized domains, and so on. 
+Even with these out of the way - human manual taggers usually only agree on approx. 80% of sentences. all the models below score around 70% accuracy.  
+
+### Sentiment Analysis Models
+For ease of reading, every sentiment module's returned values have been 
 strecthed to scale between -5 (negative) and 5 (positive).  
 To date (05/11/20) three (pre-trained) sentiment analysis models have been used:
 -	[nltk_vader](https://www.nltk.org/_modules/nltk/sentiment/vader.html)
@@ -41,7 +66,7 @@ To date (05/11/20) three (pre-trained) sentiment analysis models have been used:
     any positive sentences were given the value 3, any negative sentences were given the value (-3), 
     and any neutral sentences were given the value 0. 
 
-##  Raw text origin
+###  Raw text origin
 To date (05/11/20) the sentences for the text analysis have been taken from the following sources: 
 -	[Amazon, IMDB, yelp reviews](https://github.com/microsoft/ML-Server-PythonSamples/tree/master/microsoftml/202/data/sentiment_analysis) 
 -	[Movie scripts](http://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html) 
@@ -49,10 +74,11 @@ To date (05/11/20) the sentences for the text analysis have been taken from the 
 -	[Tweets source 2](https://raw.githubusercontent.com/sharmaroshan/Twitter-Sentiment-Analysis/master/train_tweet.csv) 
 
 from the tweets dataset, I only took tweets that followed these two criteria: 
-1	.the tweet did not contain '#' or '@'
+
+1.	The tweet did not contain '#' or '@'.
 2.	The tweet contained only utf8 characters (mainly, no emojis)
 
-## Edge cases
+### Edge cases
 1. Splitting the sentences, i only kept sentences that had 2 or more words in every clause. Words here are defined as characters split by a space character - " ". 
 
 2. Some prepositions are much more common then others in the text corpora i've used. as such, i've limited the amount of points to be shown in the graph for those.
@@ -61,7 +87,12 @@ from the tweets dataset, I only took tweets that followed these two criteria:
   3.1 a line containing multiple occurences of the same preposition
   3.2 a line that does not contain two words on either clause divided by a preposition (for example: "Although, i'm happy")
 
+### What I had expected to find
+
+TBD
+
 ## Results 
+
 ### Graphs
 ![Image of all graphs](preposition_Sentiment_graphs.png?raw=true "Image of all graphs")
 
