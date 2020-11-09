@@ -1,9 +1,9 @@
-#Preposition Meanings using Sentiment Analysis tools
+# Preposition Meanings using Sentiment Analysis tools
 This project aims to use Sentiment analysis tools to gain insight and perspective 
 on the meaning (or at least use) of prepositions in the English language. 
 
-##Table of contents
-
+<!---
+## Table of contents
 - [Introduction](##Introduction)
     * [Prepositions](###Prepositions)
     * [Goals](###Goals)
@@ -19,8 +19,9 @@ on the meaning (or at least use) of prepositions in the English language.
     * [Graphs](###Graphs)
 - [Discussion](###Discussion)
 - [Contact details](##Contact details)
+--->
 
-##Introduction
+## Introduction
 Natural language processing (NLP) is a subfield of linguistics, computer science, 
 and artificial intelligence concerned with the interactions between computers 
 and human language.
@@ -32,7 +33,7 @@ interact better with humans.
 A minority of studies aim to do he opposite: use computers to better study 
 how humans interact with themselves. This humble project aims to do so.   
 
-###Prepositions
+### Prepositions
 A preposition is a word used to link nouns, pronouns, or phrases to other words 
 within a sentence. Many such words exist, for example: 
 "both", "and", "neither" and so on.
@@ -41,12 +42,12 @@ Some prefer the use of the word 'conjunction' to  describe the  connection of
 two  clauses, though to avoid the confusion with the boolean meaning, i will 
 stick to the  terminology of prepositions.
 
-###Goals
+### Goals
 Here, I aimed to empirically look at a specific subsection of prepositions: 
 preposition that (at least intuitively) denote a contradiction of sorts. 
 
 
-####Examples
+#### Examples
 1. "I like apples, but this apple is rotten"
 2. "Github is horribly unintuitive, however it is a wonderful platform"
 
@@ -59,9 +60,9 @@ negative attitude towards a specific apple.
 This study aimes to examine the assumption that such prepositions do indeed 
 denote a contradiction between the two parts of a sentence. 
 
-##Method
+## Method
 
-###TL;DR 
+### TL;DR 
 Using Sentiment analysis models, I compared the sentiment of the first clause 
 of a sentence, up to but not including the preposition (henceforth - "prefix"),
  and the sentiment of the latter part of the clause (henceforth - "suffix"). 
@@ -69,7 +70,7 @@ of a sentence, up to but not including the preposition (henceforth - "prefix"),
  pre-trained sentiment analysis models, the I plotted the
   [graph below](###Graphs).     
 
-###Sentiment Analysis overview
+### Sentiment Analysis overview
 Sentiment analysis is a use of natural language processing tools for text 
 analysis. in particular it aims to extract, quantify, and study affective 
 states and subjective information. 
@@ -121,7 +122,7 @@ approximately 80% of sentences. all the models below score around 70% accuracy.
 [[1](https://towardsdatascience.com/basic-binary-sentiment-analysis-using-nltk-c94ba17ae386)]
 [[2](https://stanfordnlp.github.io/stanza/sentiment.html#available-models)]  
 
-###Sentiment Analysis Models
+### Sentiment Analysis Models
 For ease of reading, every sentiment module's returned values have been 
 strecthed to scale between -5 (negative) and 5 (positive).  
 To date (05/11/20) three (pre-trained) sentiment analysis models have been used:
@@ -136,7 +137,7 @@ To date (05/11/20) three (pre-trained) sentiment analysis models have been used:
     sentences were given the value (-3), and any neutral sentences were given 
     the value 0. 
 
-###Raw text origin
+### Raw text origin
 To date (05/11/20) the sentences for the text analysis have been taken from 
 the following sources: 
 -	[Amazon, IMDB, yelp reviews](https://github.com/microsoft/ML-Server-PythonSamples/tree/master/microsoftml/202/data/sentiment_analysis) 
@@ -149,7 +150,7 @@ From the tweets dataset, I only took tweets that followed these two criteria:
 1.	The tweet did not contain '#' or '@'.
 2.	The tweet contained only utf8 characters (mainly, no emojis)
 
-###Edge cases
+### Edge cases
 1. Splitting the sentences, i only kept sentences that had 2 or more words in 
 every clause. Words here are defined as characters split by a space 
 character - " ". 
@@ -164,7 +165,7 @@ discarded_lines.log. Exclusion reasons can be any of the following:
     2. A line that does not contain two words on either clause divided by a 
         preposition (for example: "Although, i'm happy")
 
-###Graph Expectations
+### Graph Expectations
 Under the assumptions above, shortly repeated here for brevity:
 1. The checked prepositions indeed hold that 'prefix preposition B' 
 denotes that prefix and suffix are (somewhat) opposites. 
@@ -184,9 +185,9 @@ In the [example section](####Examples) above, the first sentence would be expect
 point in the fourth quadrant, while the second sentence would yield a point in 
 the fourth quadrant.
 
-##Results 
+## Results 
 
-###Graphs
+### Graphs
 ![Image of all graphs](plots/preposition_Sentiment_graphs.png?raw=true "Image of all graphs")
 
 an interactive map to the graph above: 
@@ -194,46 +195,46 @@ please click [here](https://htmlpreview.github.io/?https://github.com/ofekraf/Se
 
 for in-depth interactive maps please see below:
 
-####although
+#### although
 
 - [although_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/although/although_nltk.html)
 - [although_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/although/although_TextBlob.html)
 - [although_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/although/although_stanza.html)
 
-####and yet
+#### and yet
 
 - [and_yet_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/and_yet/and_yet_nltk.html)
 - [and_yet_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/and_yet/and_yet_TextBlob.html)
 - [and_yet_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/and_yet/and_yet_stanza.html)
 
-####but
+#### but
 
 - [but_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/but/but_nltk.html)
 - [but_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/but/but_TextBlob.html)
 - [but_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/but/but_stanza.html)
 
-####even though
+#### even though
 
 - [even_though_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/even_though/even_though_nltk.html)
 - [even_though_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/even_though/even_though_TextBlob.html)
 - [even_though_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/even_though/even_though_stanza.html)
 
-####however
+#### however
 
 - [however_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/however/however_nltk.html)
 - [however_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/however/however_TextBlob.html)
 - [however_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/however/however_stanza.html)
 
-####therefore
+#### therefore
 
 - [therefore_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/therefore/therefore_nltk.html)
 - [therefore_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/therefore/therefore_TextBlob.html)
 - [therefore_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/therefore/therefore_stanza.html)
 
-##Discussion
+## Discussion
 <!--TBD-->
 
-##Contact details
+## Contact details
 
 I am more than happy to discuss this project, feel free to contact me at:
 ofek.rafaeli at mail.huji.ac.il
