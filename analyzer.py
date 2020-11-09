@@ -184,7 +184,7 @@ class Analyzer:
         lines_for_readme = []
         for prop_idx, file_name in enumerate(self.list_of_files):
             preposition = self.get_preposition_from_filename(file_name)
-            lines_for_readme.append("####" + preposition)
+            lines_for_readme.append("\n####" + preposition+"\n")
             preposition = preposition.replace(" ", "_")
             for mod_idx, module in enumerate(self.sentiment_modules):
                 fig, ax = plt.subplots()
