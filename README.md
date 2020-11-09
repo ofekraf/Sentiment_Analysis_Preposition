@@ -187,11 +187,36 @@ the fourth quadrant.
 ## Results 
 
 ### Graphs
-![Image of all graphs](preposition_Sentiment_graphs.png?raw=true "Image of all graphs")
+![Image of all graphs](plots/preposition_Sentiment_graphs.png?raw=true "Image of all graphs")
 
 an interactive map to the graph above: 
-please click [here](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/preposition_Sentiment_graphs.html)
+please click [here](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/preposition_Sentiment_graphs.html)
 
+for interactive maps of the rest of the, please see below:
+#### Although
+- [although_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/although_nltk.html)
+- [although_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/although_TextBlob.html)
+- [although_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/although_stanza.html)
+#### And yet
+- [and yet_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/and_yet_nltk.html)
+- [and yet_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/and_yet_TextBlob.html)
+- [and yet_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/and_yet_stanza.html)
+#### But
+- [but_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/but_nltk.html)
+- [but_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/but_TextBlob.html)
+- [but_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/but_stanza.html)
+#### Even though
+- [even though_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/even_though_nltk.html)
+- [even though_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/even_though_TextBlob.html)
+- [even though_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/even_though_stanza.html)
+#### However
+- [however_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/however_nltk.html)
+- [however_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/however_TextBlob.html)
+- [however_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/however_stanza.html)
+#### Therfore
+- [therefore_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/therefore_nltk.html)
+- [therefore_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/therefore_TextBlob.html)
+- [therefore_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/therefore_stanza.html)
 
 ## Discussion
 <!--TBD-->
