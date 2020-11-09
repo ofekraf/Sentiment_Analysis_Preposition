@@ -4,9 +4,9 @@ on the meaning (or at least use) of prepositions in the English language.
 
 <!--TBD-->
 ## Table of contents
-- [Introduction](##Introduction)
-    * [Prepositions](###Prepositions)
-    * [Goals](###Goals)
+- [Introduction](##introduction)
+    * [Prepositions](###prepositions)
+    * [Goals](###goals)
         - [Examples](####Examples)
 - [Method](##Method)
 <!---
