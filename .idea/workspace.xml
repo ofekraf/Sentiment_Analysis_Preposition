@@ -2,27 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="761e6798-50a4-4a79-9d96-65a375d31c77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plots/although/although_TextBlob.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/although/although_nltk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/although/although_stanza.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/and yet/and yet_TextBlob.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/and yet/and yet_nltk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/and yet/and yet_stanza.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/but/but_TextBlob.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/but/but_nltk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/but/but_stanza.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/however/however_TextBlob.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/however/however_nltk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/however/however_stanza.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/therefore/therefore_TextBlob.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/therefore/therefore_nltk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plots/therefore/therefore_stanza.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preposition_graph_links.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RUNNING_VARIABLES.py" beforeDir="false" afterPath="$PROJECT_DIR$/RUNNING_VARIABLES.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preposition_Sentiment_graphs.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/preposition_Sentiment_graphs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preposition_Sentiment_graphs.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/preposition_Sentiment_graphs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/although/although_TextBlob.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/although/although_TextBlob.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/although/although_nltk.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/although/although_nltk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/although/although_stanza.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/although/although_stanza.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/but/but_TextBlob.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/but/but_TextBlob.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/but/but_nltk.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/but/but_nltk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/but/but_stanza.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/but/but_stanza.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/however/however_TextBlob.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/however/however_TextBlob.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/however/however_nltk.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/however/however_nltk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/however/however_stanza.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/however/however_stanza.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/therefore/therefore_TextBlob.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/therefore/therefore_TextBlob.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/therefore/therefore_nltk.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/therefore/therefore_nltk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/therefore/therefore_stanza.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/therefore/therefore_stanza.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
+            <state relative-caret-position="185">
+              <caret line="59" column="29" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="29" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -68,23 +63,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="709">
-                <caret line="218" column="2" selection-start-line="218" selection-start-column="2" selection-end-line="218" selection-end-column="2" />
+              <first_editor relative-caret-position="174">
+                <caret line="199" selection-start-line="199" selection-end-line="199" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RUNNING_VARIABLES.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+            <state relative-caret-position="216">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -150,9 +145,9 @@
         <option value="$PROJECT_DIR$/RAW_SENTENCES" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/parse.py" />
-        <option value="$PROJECT_DIR$/RUNNING_VARIABLES.py" />
-        <option value="$PROJECT_DIR$/analyzer.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/analyzer.py" />
+        <option value="$PROJECT_DIR$/RUNNING_VARIABLES.py" />
       </list>
     </option>
   </component>
@@ -299,7 +294,7 @@
       <updated>1603191871821</updated>
       <workItem from="1603191873251" duration="84139000" />
       <workItem from="1604736701039" duration="20463000" />
-      <workItem from="1604922550507" duration="5495000" />
+      <workItem from="1604922550507" duration="6213000" />
     </task>
     <task id="LOCAL-00001" summary="added raw_sentences and their respective parsing into a readable format">
       <created>1603204933415</created>
@@ -560,11 +555,25 @@
       <option name="project" value="LOCAL" />
       <updated>1604923068564</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="added multiple interactive graphs">
+      <created>1604929518993</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1604929518993</updated>
+    </task>
+    <task id="LOCAL-00039" summary="space to underscore fix">
+      <created>1604929845305</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1604929845305</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110097000" />
+    <option name="totallyTimeSpent" value="110815000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -579,12 +588,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20286576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20286576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3284553" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23414634" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19674797" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35609755" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -598,7 +607,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.7470449" weight="0.25113124" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.7470449" weight="0.47511312" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="4" sideWeight="0.25295508" side_tool="true" weight="0.16591252" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
@@ -607,8 +616,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added stanza model" />
-    <MESSAGE value="fixed graphing directions + added logging for discarded lines" />
     <MESSAGE value="added logs option + looking  at all preposition words" />
     <MESSAGE value="added movie lines text corpora" />
     <MESSAGE value="added sentence relevant data to jsons" />
@@ -632,7 +639,9 @@
     <MESSAGE value="Sentiment Analysis - a (very) brief overview" />
     <MESSAGE value="added expectations and started working on table of contents" />
     <MESSAGE value="re-added plots" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-added plots" />
+    <MESSAGE value="added multiple interactive graphs" />
+    <MESSAGE value="space to underscore fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="space to underscore fix" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -644,7 +653,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Sentiment_Analysis_Preposition$analyzer.coverage" NAME="analyzer Coverage Results" MODIFIED="1604668916798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sentiment_Analysis_Preposition$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1603220640570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Sentiment_Analysis_Preposition$main.coverage" NAME="main Coverage Results" MODIFIED="1604929354264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_Analysis_Preposition$main.coverage" NAME="main Coverage Results" MODIFIED="1604930102433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -890,30 +899,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RUNNING_VARIABLES.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+    <entry file="file://$PROJECT_DIR$/preposition_graph_links.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="174">
+            <caret line="199" selection-start-line="199" selection-end-line="199" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
+        <state relative-caret-position="185">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="29" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="709">
-            <caret line="218" column="2" selection-start-line="218" selection-start-column="2" selection-end-line="218" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/RUNNING_VARIABLES.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
         </state>
       </provider>
     </entry>

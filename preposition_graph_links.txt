@@ -1,0 +1,24 @@
+####although
+[although_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/although_nltk.html)
+[although_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/although_TextBlob.html)
+[although_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/although_stanza.html)
+####and yet
+[and_yet_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/and_yet_nltk.html)
+[and_yet_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/and_yet_TextBlob.html)
+[and_yet_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/and_yet_stanza.html)
+####but
+[but_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/but_nltk.html)
+[but_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/but_TextBlob.html)
+[but_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/but_stanza.html)
+####even though
+[even_though_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/even_though_nltk.html)
+[even_though_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/even_though_TextBlob.html)
+[even_though_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/even_though_stanza.html)
+####however
+[however_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/however_nltk.html)
+[however_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/however_TextBlob.html)
+[however_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/however_stanza.html)
+####therefore
+[therefore_nltk](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/therefore_nltk.html)
+[therefore_TextBlob](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/therefore_TextBlob.html)
+[therefore_stanza](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/therefore_stanza.html)

@@ -57,6 +57,9 @@ class Analyzer:
 
         fig = self._plot_main_figure()
 
+        if DISPLAY_MAIN_IMAGE:
+            fig.show()
+
         if UPDATE_SHOWN_IMAGE:
             self._print_log("saving fig")
             mpld3.save_html(fig,
@@ -84,7 +87,6 @@ class Analyzer:
             for prop_idx, file_name in enumerate(self.list_of_files):
                 self._update_scatter_plot(all_plots, fig, file_name,
                                           mod_idx, module, prop_idx)
-        fig.show()
         return fig
 
     def _update_scatter_plot(self, all_plots, fig, file_name, mod_idx,
@@ -176,14 +178,15 @@ class Analyzer:
         plotes = os.listdir("./plots")
         for prop_idx, file_name in enumerate(self.list_of_files):
             preposition = self.get_preposition_from_filename(file_name)
-            preposition = preposition.replace(" ","_")
+            preposition = preposition.replace(" ", "_")
             if preposition not in plotes:
                 os.mkdir(os.path.join("plots", preposition))
-
+        lines_for_readme = []
         for prop_idx, file_name in enumerate(self.list_of_files):
+            preposition = self.get_preposition_from_filename(file_name)
+            lines_for_readme.append("####" + preposition)
+            preposition = preposition.replace(" ", "_")
             for mod_idx, module in enumerate(self.sentiment_modules):
-                preposition = self.get_preposition_from_filename(file_name)
-                preposition = preposition.replace(" ", "_")
                 fig, ax = plt.subplots()
                 ax.set_title(
                     "1st vs 2nd sentiment of clause, parted  by '" + preposition + "': " + module)
@@ -199,14 +202,19 @@ class Analyzer:
                     labels=self.coords[file_name][module][2])
                 mpld3.plugins.connect(fig, tooltip)
                 file_to_save_suffix = preposition + "_" + module
-                file_to_save_suffix = file_to_save_suffix.replace(" ","_")
+                file_to_save_suffix = file_to_save_suffix.replace(" ", "_")
                 file_dir_save = os.path.join('plots',
                                              preposition,
                                              file_to_save_suffix + ".html")
                 mpld3.save_html(fig, file_dir_save)
 
-                print(
-                    "["+preposition + "_" + module+"](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/" +file_to_save_suffix+".html)")
+                lines_for_readme.append(
+                    "- [" + preposition + "_" + module +
+                    "](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/" + file_to_save_suffix + ".html)")
+
+        with open("preposition_graph_links_for_readme.txt",'w') as writer:
+            for line in lines_for_readme:
+                writer.write(line+"\n")
 
     def get_preposition_from_filename(self, file_name):
         return file_name.split("_")[0]
