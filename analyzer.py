@@ -210,7 +210,7 @@ class Analyzer:
 
                 lines_for_readme.append(
                     "- [" + preposition + "_" + module +
-                    "](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/" + file_to_save_suffix + ".html)")
+                    "](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/"+ preposition+"/" + file_to_save_suffix + ".html)")
 
         with open("preposition_graph_links_for_readme.txt",'w') as writer:
             for line in lines_for_readme:
