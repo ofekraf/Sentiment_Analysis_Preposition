@@ -3,9 +3,23 @@ This project aims to use Sentiment analysis tools to gain insight and perspectiv
 on the meaning (or at least use) of prepositions in the English language. 
 
 ## Table of contents
+
 - [Introduction](##Introduction)
     * [Prepositions](###Prepositions)
-    * 
+    * [Goals](###Goals)
+        - [Examples](####Examples)
+- [Method](##Method)
+    * [TL;DR](###TL;DR)
+    * [Sentiment Analysis: a (very) brief overview](###Sentiment Analysis overview) 
+    * [Sentiment Analysis Models](###Sentiment Analysis Models)
+    * [Raw text origin](###Raw text origin)
+    * [Edge cases](###Edge cases)
+    * [Graph Expectations](###Edge cases)
+- [Results](##Results) 
+    * [Graphs](###Graphs)
+- [Discussion](###Discussion)
+- [Contact details](##Contact details)
+
 ## Introduction
 Natural language processing (NLP) is a subfield of linguistics, computer science, 
 and artificial intelligence concerned with the interactions between computers 
@@ -55,7 +69,7 @@ of a sentence, up to but not including the preposition (henceforth - "prefix"),
  pre-trained sentiment analysis models, the I plotted the
   [graph below](###Graphs).     
 
-### Sentiment Analysis - a (very) brief overview
+### Sentiment Analysis overview
 Sentiment analysis is a use of natural language processing tools for text 
 analysis. in particular it aims to extract, quantify, and study affective 
 states and subjective information. 
@@ -104,7 +118,8 @@ challenges: identifying sarcasm and Cynicism, refining negation scope,
 extending modules to unrecognized domains, and so on. 
 Even with these out of the way - human manual taggers usually only agree on 
 approximately 80% of sentences. all the models below score around 70% accuracy. 
-<!---TBD - add reference for statistics--->  
+[[1](https://towardsdatascience.com/basic-binary-sentiment-analysis-using-nltk-c94ba17ae386)]
+[[2](https://stanfordnlp.github.io/stanza/sentiment.html#available-models)]  
 
 ### Sentiment Analysis Models
 For ease of reading, every sentiment module's returned values have been 
@@ -121,7 +136,7 @@ To date (05/11/20) three (pre-trained) sentiment analysis models have been used:
     sentences were given the value (-3), and any neutral sentences were given 
     the value 0. 
 
-###  Raw text origin
+### Raw text origin
 To date (05/11/20) the sentences for the text analysis have been taken from 
 the following sources: 
 -	[Amazon, IMDB, yelp reviews](https://github.com/microsoft/ML-Server-PythonSamples/tree/master/microsoftml/202/data/sentiment_analysis) 
@@ -150,7 +165,6 @@ discarded_lines.log. Exclusion reasons can be any of the following:
         preposition (for example: "Although, i'm happy")
 
 ### Graph Expectations
-
 Under the assumptions above, shortly repeated here for brevity:
 1. The checked prepositions indeed hold that 'prefix preposition B' 
 denotes that prefix and suffix are (somewhat) opposites. 
@@ -166,12 +180,9 @@ score). this case would yield a point (representing the sentence's two scores)
 in the second quadrant. A similar case with opposite sentiments (prefix 
 receiving a negative score, and a suffix with a negative one).
 
-<!--TBD - add link to example section-->
-In the example section above, the first sentence would be expected to yield a 
+In the [example section](####Examples) above, the first sentence would be expected to yield a 
 point in the fourth quadrant, while the second sentence would yield a point in 
 the fourth quadrant.
-
-
 
 ## Results 
 
@@ -182,10 +193,10 @@ an interactive map to the graph above:
 please click [here](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/preposition_Sentiment_graphs.html)
 
 
-### Discussion
+## Discussion
 <!--TBD-->
 
-### Contact details
+## Contact details
 
 I am more than happy to discuss this project, feel free to contact me at:
 ofek.rafaeli at mail.huji.ac.il

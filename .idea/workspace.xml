@@ -53,8 +53,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="169">
-                <caret line="102" column="34" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
+              <first_editor relative-caret-position="532">
+                <caret line="196" column="7" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="7" />
               </first_editor>
               <second_editor />
             </state>
@@ -81,11 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>analyzing</find>
-      <find>list_of_files</find>
-      <find>self.list_of_files</find>
-      <find>printable</find>
-      <find>calculate</find>
       <find>score</find>
       <find>self.coords[file]</find>
       <find>self.coords</find>
@@ -110,6 +105,11 @@
       <find>disca</find>
       <find>prop</find>
       <find>prefix</find>
+      <find>Sentiment Analysis - a (very) brief overview</find>
+      <find>Sentiment Analysis - overview</find>
+      <find>Sentiment Analysis</find>
+      <find>Sentiment Analysis</find>
+      <find>overview</find>
       <find>TBD</find>
     </findStrings>
     <replaceStrings>
@@ -274,7 +274,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603191871821</updated>
       <workItem from="1603191873251" duration="84139000" />
-      <workItem from="1604736701039" duration="16685000" />
+      <workItem from="1604736701039" duration="20463000" />
     </task>
     <task id="LOCAL-00001" summary="added raw_sentences and their respective parsing into a readable format">
       <created>1603204933415</created>
@@ -521,11 +521,18 @@
       <option name="project" value="LOCAL" />
       <updated>1604784889705</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="added expectations and started working on table of contents">
+      <created>1604873129722</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1604873129722</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100824000" />
+    <option name="totallyTimeSpent" value="104602000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -540,7 +547,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17119156" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11312217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -555,7 +562,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.43414634" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.18699187" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.15609756" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -568,7 +575,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added tweets sentences" />
     <MESSAGE value="added gridlines for graphs and stretched graphs in a uniform way" />
     <MESSAGE value="added stanza model" />
     <MESSAGE value="fixed graphing directions + added logging for discarded lines" />
@@ -593,7 +599,8 @@
     <MESSAGE value="added files for data on new propositions" />
     <MESSAGE value="added loads of detils to readme" />
     <MESSAGE value="Sentiment Analysis - a (very) brief overview" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sentiment Analysis - a (very) brief overview" />
+    <MESSAGE value="added expectations and started working on table of contents" />
+    <option name="LAST_COMMIT_MESSAGE" value="added expectations and started working on table of contents" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -863,8 +870,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="169">
-            <caret line="102" column="34" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
+          <first_editor relative-caret-position="532">
+            <caret line="196" column="7" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="7" />
           </first_editor>
           <second_editor />
         </state>
