@@ -176,12 +176,14 @@ class Analyzer:
         plotes = os.listdir("./plots")
         for prop_idx, file_name in enumerate(self.list_of_files):
             preposition = self.get_preposition_from_filename(file_name)
+            preposition = preposition.replace(" ","_")
             if preposition not in plotes:
                 os.mkdir(os.path.join("plots", preposition))
 
         for prop_idx, file_name in enumerate(self.list_of_files):
             for mod_idx, module in enumerate(self.sentiment_modules):
                 preposition = self.get_preposition_from_filename(file_name)
+                preposition = preposition.replace(" ", "_")
                 fig, ax = plt.subplots()
                 ax.set_title(
                     "1st vs 2nd sentiment of clause, parted  by '" + preposition + "': " + module)
