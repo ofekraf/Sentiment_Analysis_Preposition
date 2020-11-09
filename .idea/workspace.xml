@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="761e6798-50a4-4a79-9d96-65a375d31c77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/plots/although/although_TextBlob.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/although/although_TextBlob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/although/although_nltk.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/although/although_nltk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/although/although_stanza.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/although/although_stanza.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/but/but_TextBlob.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/but/but_TextBlob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/but/but_nltk.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/but/but_nltk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/but/but_stanza.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/but/but_stanza.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/however/however_TextBlob.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/however/however_TextBlob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/however/however_nltk.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/however/however_nltk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/however/however_stanza.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/however/however_stanza.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/therefore/therefore_TextBlob.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/therefore/therefore_TextBlob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/therefore/therefore_nltk.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/therefore/therefore_nltk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/therefore/therefore_stanza.html" beforeDir="false" afterPath="$PROJECT_DIR$/plots/therefore/therefore_stanza.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preposition_graph_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="212" column="165" lean-forward="true" selection-start-line="212" selection-start-column="165" selection-end-line="212" selection-end-column="165" />
+            <state relative-caret-position="-175">
+              <caret line="186" column="64" lean-forward="true" selection-start-line="186" selection-start-column="64" selection-end-line="186" selection-end-column="64" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -61,20 +51,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/preposition_graph_links_for_readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="143" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="143" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="228">
-                <caret line="196" column="143" lean-forward="true" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="143" />
+              <first_editor relative-caret-position="119">
+                <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
               </first_editor>
               <second_editor />
             </state>
@@ -101,7 +82,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>RAW</find>
       <find>.log</find>
       <find>open</find>
       <find>\t | (</find>
@@ -131,6 +111,7 @@
       <find>preposition</find>
       <find>mpld3.sa</find>
       <find>file_to_save_suffix</find>
+      <find>#</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -151,9 +132,9 @@
         <option value="$PROJECT_DIR$/RAW_SENTENCES" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/parse.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/RUNNING_VARIABLES.py" />
         <option value="$PROJECT_DIR$/analyzer.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -180,6 +161,42 @@
               <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
               <item name="plots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
+              <item name="plots" type="462c0819:PsiDirectoryNode" />
+              <item name="although" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
+              <item name="plots" type="462c0819:PsiDirectoryNode" />
+              <item name="and_yet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
+              <item name="plots" type="462c0819:PsiDirectoryNode" />
+              <item name="but" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
+              <item name="plots" type="462c0819:PsiDirectoryNode" />
+              <item name="even_though" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
+              <item name="plots" type="462c0819:PsiDirectoryNode" />
+              <item name="however" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
+              <item name="plots" type="462c0819:PsiDirectoryNode" />
+              <item name="therefore" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,7 +317,7 @@
       <updated>1603191871821</updated>
       <workItem from="1603191873251" duration="84139000" />
       <workItem from="1604736701039" duration="20463000" />
-      <workItem from="1604922550507" duration="6454000" />
+      <workItem from="1604922550507" duration="7005000" />
     </task>
     <task id="LOCAL-00001" summary="added raw_sentences and their respective parsing into a readable format">
       <created>1603204933415</created>
@@ -582,11 +599,25 @@
       <option name="project" value="LOCAL" />
       <updated>1604930227584</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fixed links problem">
+      <created>1604930606089</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1604930606089</updated>
+    </task>
+    <task id="LOCAL-00042" summary="updated readme">
+      <created>1604930724322</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1604930724322</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111056000" />
+    <option name="totallyTimeSpent" value="111607000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -601,7 +632,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35897437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12745099" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -629,8 +660,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added movie lines text corpora" />
-    <MESSAGE value="added sentence relevant data to jsons" />
     <MESSAGE value="updated readme with text and models sources" />
     <MESSAGE value="added running variables.py + added colors to graph + added title" />
     <MESSAGE value="added suptitle" />
@@ -654,7 +683,9 @@
     <MESSAGE value="added multiple interactive graphs" />
     <MESSAGE value="space to underscore fix" />
     <MESSAGE value="updated links" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated links" />
+    <MESSAGE value="fixed links problem" />
+    <MESSAGE value="updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated readme" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -915,16 +946,6 @@
     <entry file="file://$PROJECT_DIR$/preposition_graph_links.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="228">
-            <caret line="196" column="143" lean-forward="true" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="143" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RUNNING_VARIABLES.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -932,20 +953,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/preposition_graph_links_for_readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="23" selection-end-column="160" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="212" column="165" lean-forward="true" selection-start-line="212" selection-start-column="165" selection-end-line="212" selection-end-column="165" />
+        <state relative-caret-position="-175">
+          <caret line="186" column="64" lean-forward="true" selection-start-line="186" selection-start-column="64" selection-end-line="186" selection-end-column="64" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preposition_graph_links_for_readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="143" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="143" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
