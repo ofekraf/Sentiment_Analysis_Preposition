@@ -2,13 +2,14 @@
 This project aims to use Sentiment analysis tools to gain insight and perspective 
 on the meaning (or at least use) of prepositions in the English language. 
 
-<!---
+<!--TBD-->
 ## Table of contents
-- [Introduction](## Introduction)
+- [Introduction](##Introduction)
     * [Prepositions](###Prepositions)
     * [Goals](###Goals)
         - [Examples](####Examples)
 - [Method](##Method)
+<!---
     * [TL;DR](###TL;DR)
     * [Sentiment Analysis: a (very) brief overview](###Sentiment Analysis overview) 
     * [Sentiment Analysis Models](###Sentiment Analysis Models)
@@ -111,7 +112,7 @@ expected to have good results on quotes from movies.
 Note I aimed to handle this by using multiple different models, trained on 
 different corpora, more on this below.
     - Nltk  & Textblob - on social media 
-    - stanza - on [Universal dependency](https://universaldependencies.org/) 
+    - Stanza - on [Universal dependency](https://universaldependencies.org/) 
     dataset which includes both Wikipedia articles and news media
 
 2. NLP in general, and sentiment analysis in particular still face numerous 

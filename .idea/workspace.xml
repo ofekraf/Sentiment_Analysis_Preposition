@@ -4,7 +4,6 @@
     <list default="true" id="761e6798-50a4-4a79-9d96-65a375d31c77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-469">
+            <state relative-caret-position="306">
               <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -29,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="1548">
               <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -41,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="186" column="64" lean-forward="true" selection-start-line="186" selection-start-column="64" selection-end-line="186" selection-end-column="64" />
+            <state relative-caret-position="609">
+              <caret line="186" column="43" selection-start-line="186" selection-start-column="41" selection-end-line="186" selection-end-column="43" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -54,8 +53,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="119">
-                <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
+              <first_editor relative-caret-position="207">
+                <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -82,8 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.log</find>
-      <find>open</find>
       <find>\t | (</find>
       <find>\t |</find>
       <find>nlp</find>
@@ -102,7 +99,6 @@
       <find>Sentiment Analysis - overview</find>
       <find>Sentiment Analysis</find>
       <find>overview</find>
-      <find>TBD</find>
       <find>now i should love you</find>
       <find>os.path.join</find>
       <find>prepos</find>
@@ -112,6 +108,9 @@
       <find>mpld3.sa</find>
       <find>file_to_save_suffix</find>
       <find>#</find>
+      <find>##</find>
+      <find>TBD</find>
+      <find>stanz</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -161,42 +160,6 @@
               <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
               <item name="plots" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
-              <item name="although" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
-              <item name="and_yet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
-              <item name="but" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
-              <item name="even_though" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
-              <item name="however" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
-              <item name="therefore" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,6 +281,7 @@
       <workItem from="1603191873251" duration="84139000" />
       <workItem from="1604736701039" duration="20463000" />
       <workItem from="1604922550507" duration="7005000" />
+      <workItem from="1604931117615" duration="496000" />
     </task>
     <task id="LOCAL-00001" summary="added raw_sentences and their respective parsing into a readable format">
       <created>1603204933415</created>
@@ -613,11 +577,32 @@
       <option name="project" value="LOCAL" />
       <updated>1604930724322</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="fixed readme headers">
+      <created>1604931249406</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1604931249406</updated>
+    </task>
+    <task id="LOCAL-00044" summary="attempting inserting table of contents">
+      <created>1604931302874</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1604931302874</updated>
+    </task>
+    <task id="LOCAL-00045" summary="commented out table of contents">
+      <created>1604931384084</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1604931384084</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111607000" />
+    <option name="totallyTimeSpent" value="112103000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -632,7 +617,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12745099" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1907994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -660,9 +645,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated readme with text and models sources" />
-    <MESSAGE value="added running variables.py + added colors to graph + added title" />
-    <MESSAGE value="added suptitle" />
     <MESSAGE value="refractored files to directories" />
     <MESSAGE value="added directory for sentiments" />
     <MESSAGE value="saved figure" />
@@ -685,7 +667,10 @@
     <MESSAGE value="updated links" />
     <MESSAGE value="fixed links problem" />
     <MESSAGE value="updated readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated readme" />
+    <MESSAGE value="fixed readme headers" />
+    <MESSAGE value="attempting inserting table of contents" />
+    <MESSAGE value="commented out table of contents" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented out table of contents" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -876,9 +861,7 @@
     <entry file="file://$PROJECT_DIR$/but_sentences_sentiments.json" />
     <entry file="file://$PROJECT_DIR$/.png" />
     <entry file="file://$PROJECT_DIR$/graphs_matrix.png" />
-    <entry file="file://$PROJECT_DIR$/preposition_Sentiment_graphs.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/preposition_Sentiment_graphs.png" />
     <entry file="file://$PROJECT_DIR$/sentences/although_sentences">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -893,22 +876,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sentiments/but_sentences_sentiments.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/preposition_Sentiment_graphs.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/preposition_Sentiment_graphs.html" />
     <entry file="file://$PROJECT_DIR$/sentiments/although_sentences_sentiments.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -933,9 +904,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/preposition_graph_links.txt" />
+    <entry file="file://$PROJECT_DIR$/preposition_graph_links_for_readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="23" selection-end-column="160" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-469">
+        <state relative-caret-position="306">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -943,8 +922,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preposition_graph_links.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1548">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RUNNING_VARIABLES.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -953,17 +939,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preposition_graph_links_for_readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="23" selection-end-column="160" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="186" column="64" lean-forward="true" selection-start-line="186" selection-start-column="64" selection-end-line="186" selection-end-column="64" />
+        <state relative-caret-position="609">
+          <caret line="186" column="43" selection-start-line="186" selection-start-column="41" selection-end-line="186" selection-end-column="43" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -973,8 +952,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="119">
-            <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
+          <first_editor relative-caret-position="207">
+            <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
