@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="761e6798-50a4-4a79-9d96-65a375d31c77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="761e6798-50a4-4a79-9d96-65a375d31c77" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +50,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="207">
-                <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+              <first_editor relative-caret-position="108">
+                <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
               </first_editor>
               <second_editor />
             </state>
@@ -81,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\t | (</find>
       <find>\t |</find>
       <find>nlp</find>
       <find>subplo</find>
@@ -111,6 +107,7 @@
       <find>##</find>
       <find>TBD</find>
       <find>stanz</find>
+      <find>prepositions</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -281,7 +278,7 @@
       <workItem from="1603191873251" duration="84139000" />
       <workItem from="1604736701039" duration="20463000" />
       <workItem from="1604922550507" duration="7005000" />
-      <workItem from="1604931117615" duration="496000" />
+      <workItem from="1604931117615" duration="741000" />
     </task>
     <task id="LOCAL-00001" summary="added raw_sentences and their respective parsing into a readable format">
       <created>1603204933415</created>
@@ -598,11 +595,25 @@
       <option name="project" value="LOCAL" />
       <updated>1604931384084</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="TOC attempt 2">
+      <created>1604931724056</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1604931724056</updated>
+    </task>
+    <task id="LOCAL-00047" summary="TOC attempt 3">
+      <created>1604931826934</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1604931826934</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112103000" />
+    <option name="totallyTimeSpent" value="112348000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -645,8 +656,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refractored files to directories" />
-    <MESSAGE value="added directory for sentiments" />
     <MESSAGE value="saved figure" />
     <MESSAGE value="added graph to README" />
     <MESSAGE value="spelling" />
@@ -670,7 +679,9 @@
     <MESSAGE value="fixed readme headers" />
     <MESSAGE value="attempting inserting table of contents" />
     <MESSAGE value="commented out table of contents" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented out table of contents" />
+    <MESSAGE value="TOC attempt 2" />
+    <MESSAGE value="TOC attempt 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="TOC attempt 3" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -952,8 +963,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="207">
-            <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+          <first_editor relative-caret-position="108">
+            <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           </first_editor>
           <second_editor />
         </state>

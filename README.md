@@ -3,13 +3,13 @@ This project aims to use Sentiment analysis tools to gain insight and perspectiv
 on the meaning (or at least use) of prepositions in the English language. 
 
 <!--TBD-->
+<!---
 ## Table of contents
 - [Introduction](##introduction)
     * [Prepositions](###prepositions)
     * [Goals](###goals)
         - [Examples](####Examples)
 - [Method](##Method)
-<!---
     * [TL;DR](###TL;DR)
     * [Sentiment Analysis: a (very) brief overview](###Sentiment Analysis overview) 
     * [Sentiment Analysis Models](###Sentiment Analysis Models)
