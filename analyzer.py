@@ -23,6 +23,7 @@ class Analyzer:
         self.coords = {}
         self._analysis_done = False
         self._print_log("finished Analyzer initialization")
+        self.plot_colors = ['red', 'blue', 'green', 'purple']
 
     def _print_log(self, msg):
         if PRINT_LOGS:
@@ -36,7 +37,7 @@ class Analyzer:
         return SentimentIntensityAnalyzer()
 
     @classmethod
-    def clean(self, word):
+    def clean(cls, word):
         if not word:
             return word  # nothing to strip
         for start, c in enumerate(word):
@@ -54,48 +55,59 @@ class Analyzer:
 
         self._print_log("starting plotting")
 
-        fig, all_plots = plt.subplots(len(self.list_of_files),
-                                      len(self.sentiment_modules))
-        fig.suptitle(
-            "Sentiment of first vs second part of sentences, parted  by Prepositiosn")
-
-        colors = ['red', 'blue', 'green', 'purple']
-        for mod_idx, module in enumerate(self.sentiment_modules):
-            all_plots[0, mod_idx].set_title(module)
-            for prop_idx, file_name in enumerate(self.list_of_files):
-                color = colors[prop_idx % len(colors)]
-                scatter = all_plots[prop_idx, mod_idx].scatter(
-                    self.coords[file_name][module][0],
-                    self.coords[file_name][module][1],
-                    color=color)
-                all_plots[prop_idx, mod_idx].grid(which='both', axis='both',
-                                                  color='grey',
-                                                  linestyle='solid')
-                all_plots[prop_idx, mod_idx].axis(xmin=-5, xmax=5,
-                                                  ymin=-5, ymax=5)
-                all_plots[prop_idx, 0].set_ylabel(
-                    string.capwords(file_name.split("_")[0]), fontsize=10, color=color)
-                all_plots[prop_idx, 0].yaxis.set_label_position("left")
-
-                tooltip = mpld3.plugins.PointLabelTooltip(
-                    scatter,
-                    labels=self.coords[file_name][module][2])
-                mpld3.plugins.connect(fig, tooltip)
-
-
-        fig.show()
+        fig = self._plot_main_figure()
 
         if UPDATE_SHOWN_IMAGE:
             self._print_log("saving fig")
             mpld3.save_html(fig,
-                            "preposition_Sentiment_graphs.html")
-            fig.savefig('preposition_Sentiment_graphs.png')
+                            os.path.join('plots',
+                                         'preposition_Sentiment_graphs.html'))
+            fig.savefig(
+                os.path.join('plots', 'preposition_Sentiment_graphs.png'))
 
         if SHOW_INTERACTIVE_IMAGE:
             mpld3.show()
 
+        if PLOT_INDIVIDUAL_PREPOSITION_MODULE_PLOTS:
+            self._plot_individual_plots()
+
         self._print_log("finised plotting")
 
+    def _plot_main_figure(self):
+        fig, all_plots = plt.subplots(len(self.list_of_files),
+                                      len(self.sentiment_modules))
+        fig.suptitle(
+            "Sentiment of first vs second part of clause, parted  by Prepositiosn")
+
+        for mod_idx, module in enumerate(self.sentiment_modules):
+            all_plots[0, mod_idx].set_title(module)
+            for prop_idx, file_name in enumerate(self.list_of_files):
+                self._update_scatter_plot(all_plots, fig, file_name,
+                                          mod_idx, module, prop_idx)
+        fig.show()
+        return fig
+
+    def _update_scatter_plot(self, all_plots, fig, file_name, mod_idx,
+                             module, prop_idx):
+        color = self.plot_colors[prop_idx % len(self.plot_colors)]
+        preposition = self.get_preposition_from_filename(file_name)
+
+        scatter = all_plots[prop_idx, mod_idx].scatter(
+            self.coords[file_name][module][0],
+            self.coords[file_name][module][1],
+            color=color)
+        all_plots[prop_idx, mod_idx].grid(which='both', axis='both',
+                                          color='grey',
+                                          linestyle='solid')
+        all_plots[prop_idx, mod_idx].axis(xmin=-5, xmax=5,
+                                          ymin=-5, ymax=5)
+        all_plots[prop_idx, 0].set_ylabel(
+            string.capwords(preposition), fontsize=10, color=color)
+        all_plots[prop_idx, 0].yaxis.set_label_position("left")
+        tooltip = mpld3.plugins.PointLabelTooltip(
+            scatter,
+            labels=self.coords[file_name][module][2])
+        mpld3.plugins.connect(fig, tooltip)
 
     def analyze(self):
         self._print_log("starting analyzing")
@@ -121,7 +133,8 @@ class Analyzer:
 
                 first = self.clean(first)
                 sec = self.clean(sec)
-                sentence = " ".join([first, file.split("_")[0], sec])
+                preposition = self.get_preposition_from_filename(file)
+                sentence = " ".join([first, preposition, sec])
                 for mod_name, module in self.sentiment_modules.items():
                     self.coords[file][mod_name][0].append(
                         self.calc_score(module, first))
@@ -158,6 +171,43 @@ class Analyzer:
         with open(os.path.join("sentiments",
                                file + '_sentiments.json')) as json_file:
             return json.load(json_file)
+
+    def _plot_individual_plots(self):
+        plotes = os.listdir("./plots")
+        for prop_idx, file_name in enumerate(self.list_of_files):
+            preposition = self.get_preposition_from_filename(file_name)
+            if preposition not in plotes:
+                os.mkdir(os.path.join("plots", preposition))
+
+        for prop_idx, file_name in enumerate(self.list_of_files):
+            for mod_idx, module in enumerate(self.sentiment_modules):
+                preposition = self.get_preposition_from_filename(file_name)
+                fig, ax = plt.subplots()
+                ax.set_title(
+                    "1st vs 2nd sentiment of clause, parted  by '" + preposition + "': " + module)
+                plt.xlabel('First clause sentiment value', fontsize=18)
+                plt.ylabel('Second clause sentiment value', fontsize=16)
+                color = self.plot_colors[prop_idx % len(self.plot_colors)]
+
+                scatter = ax.scatter(self.coords[file_name][module][0],
+                                     self.coords[file_name][module][1],
+                                     color=color)
+                tooltip = mpld3.plugins.PointLabelTooltip(
+                    scatter,
+                    labels=self.coords[file_name][module][2])
+                mpld3.plugins.connect(fig, tooltip)
+                file_to_save_suffix = preposition + "_" + module
+                file_to_save_suffix = file_to_save_suffix.replace(" ","_")
+                file_dir_save = os.path.join('plots',
+                                             preposition,
+                                             file_to_save_suffix + ".html")
+                mpld3.save_html(fig, file_dir_save)
+
+                print(
+                    "["+preposition + "_" + module+"](https://htmlpreview.github.io/?https://github.com/ofekraf/Sentiment_Analysis_Preposition/blob/master/plots/" +file_to_save_suffix+".html)")
+
+    def get_preposition_from_filename(self, file_name):
+        return file_name.split("_")[0]
 
 
 def stanza_normalizer(sentiment):
