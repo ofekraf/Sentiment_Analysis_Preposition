@@ -2,9 +2,9 @@
 This project aims to use Sentiment analysis tools to gain insight and perspective 
 on the meaning (or at least use) of prepositions in the English language. 
 
+<!---
 ## Table of contents
 - [Introduction](## Introduction)
-<!---
     * [Prepositions](###Prepositions)
     * [Goals](###Goals)
         - [Examples](####Examples)
