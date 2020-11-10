@@ -252,16 +252,16 @@ score), will not count as a sentence in a certain quadrant.
 #### although
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
 | -------------------| ---|---|---|---|
-| Nltk |  N\A | N\A|She was quite disappointed although some blame needs to be placed at her door. |I think it was Robert Ryans best film, because he portrayed someone like my father, and he was a schizophrenic in real life,(my father) although he never murdered anyone but was affected more so during the second world war which made him worse|
+| Nltk |  N\A | N\A |She was quite disappointed although some blame needs to be placed at her door. |I think it was Robert Ryans best film, because he portrayed someone like my father, and he was a schizophrenic in real life,(my father) although he never murdered anyone but was affected more so during the second world war which made him worse|
 | Textblob  |The police report said an escaped lunatic attacked them. He must have been a very powerful man. Although I really don't see that it is any of your concern, Miss Price |N\A |N\A |might have met a nice, although similarly filthy, gentleman tonight. see where it goes |
 | Stanza  |N\A |N\A |The police report said an escaped lunatic attacked them. He must have been a very powerful man. Although I really don't see that it is any of your concern, Miss Price. |might have met a nice, although similarly filthy, gentleman tonight. see where it goes |   
 
 #### and yet
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
 | -------------------| ---|---|---|---|
-| Nltk |  TBD |TBD |TBD |TBD |
-| Textblob  |TBD |TBD |TBD |TBD |
-| Stanza  |TBD |TBD |TBD |TBD |
+| Nltk |  N\A |I tried to investigate the attack. There are no records. The case was closed and now they've 'misplaced' the file. David's lacerations were cleaned and dressed when he arrived here and yet supposedly no doctor examined him before I did. The Goodman boy is already in the ground so he's no good to us. So I went to the pub in East Proctor where I was convinced of two things. |in the brazil show, they had no problem and yet aoi, reita and kai seemed to be in a bad mood |you're surrounded by people who love you (even more than you deserve) and yet, why are so hateful? |
+| Textblob  |N\A | N\A | I tried to investigate the attack. There are no records. The case was closed and now they've 'misplaced' the file. David's lacerations were cleaned and dressed when he arrived here and yet supposedly no doctor examined him before I did. The Goodman boy is already in the ground so he's no good to us. So I went to the pub in East Proctor where I was convinced of two things. |N\A |
+| Stanza  |N\A |N\A |I just don't see how someone, anyone, can appear that way and yet be involved in such total shit. How can you be so fucking, I don't know, cool about it? |you're surrounded by people who love you (even more than you deserve) and yet, why are so hateful? |
 
 #### but
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
