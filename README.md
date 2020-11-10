@@ -7,20 +7,19 @@ on the meaning (or at least use) of prepositions in the English language.
 - [Introduction](#introduction)
     * [Prepositions](#prepositions)
     * [Goals](#goals)
-<!---
-        - [Examples](####Examples)
-- [Method](##Method)
-    * [TL;DR](###TL;DR)
-    * [Sentiment Analysis: a (very) brief overview](###Sentiment Analysis overview) 
-    * [Sentiment Analysis Models](###Sentiment Analysis Models)
-    * [Raw text origin](###Raw text origin)
-    * [Edge cases](###Edge cases)
-    * [Graph Expectations](###Edge cases)
-- [Results](##Results) 
-    * [Graphs](###Graphs)
-- [Discussion](###Discussion)
-- [Contact details](##Contact details)
---->
+        - [Examples](#Examples)
+- [Method](#Method)
+    * [TL;DR](#TL;DR)
+    * [Sentiment Analysis: a (very) brief overview](#Sentiment Analysis overview) 
+    * [Sentiment Analysis Models](#Sentiment Analysis Models)
+    * [Raw text origin](#Raw text origin)
+    * [Edge cases](#Edge cases)
+    * [Graph Expectations](#Edge cases)
+- [Results](#Results) 
+    * [Graphs](#Graphs)
+- [Discussion](#Discussion)
+- [Contact details](#Contact details)
+<!------>
 
 ## Introduction
 Natural language processing (NLP) is a subfield of linguistics, computer science, 
