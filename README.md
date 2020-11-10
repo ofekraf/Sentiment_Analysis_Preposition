@@ -238,6 +238,27 @@ for in-depth interactive maps please see below:
 ## Discussion
 <!--TBD-->
 
+Before diving in, let us look at a couple of examples from each quadrant, for 
+each analyzed preposition:
+
+#### although
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |   |
+| Textblob  |   |
+| stanza  |   |   
+
+#### and yet
+
+#### but
+
+#### even though
+
+#### however
+
+#### therefore
+
+
 ## Contact details
 
 I am more than happy to discuss this project, feel free to contact me at:
