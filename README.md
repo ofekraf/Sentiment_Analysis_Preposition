@@ -239,16 +239,21 @@ for in-depth interactive maps please see below:
 <!--TBD-->
 
 Before diving in, let us look at a couple of examples from each quadrant, for 
-each analyzed preposition:
+each analyzed preposition. 
+
+N\A means no such sentence was currently found for the correlating 
+module-preposition-quadrant.
+
 
 #### although
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
 | -------------------| ---|---|---|---|
-| Nltk |   |
-| Textblob  |   |
-| stanza  |   |   
+| Nltk |  TBD |TBD |TBD |TBD |
+| Textblob  |TBD |TBD |TBD |TBD |
+| stanza  |TBD |TBD |TBD |TBD |   
 
 #### and yet
+
 
 #### but
 
