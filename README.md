@@ -289,18 +289,20 @@ score), will not count as a sentence in a certain quadrant.
 #### therefore
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
 | -------------------| ---|---|---|---|
-| Nltk |  TBD |TBD |TBD |TBD |
-| Textblob  |TBD |TBD |TBD |TBD |
-| Stanza  |TBD |TBD |TBD |TBD |
-
+| Nltk |  when someone says they love you,  every effo gets noticed therefore should be exploited! im afraid of what im seeing. i love my girl. |The railroad has no business in Tennessee. Therefore I have no interest in the state of Tennessee. |On the couch. Dark. Quiet. I wondered if I had made a terrible mistake. I almost reached for the phone about a thousand times. I thought I could take it back, erase it, explain I had momentarily lost my mind. Then I told myself we weren't happy. That was the truth. That what we were was safe. It was unfair to you and to me to stay in a relationship for that reason. I thought about Clementine and the spark when I was with her, but then I thought what you and I had was real and adult and therefore significant even if it wasn't much fun. But I wanted fun. I saw other people having fun and I wanted it. Then I thought fun is a lie, that no one is really having fun; I'm being suckered by advertising and movie bullshit... then I thought maybe not, maybe not. And then I thought, as I always do at this point in my argument, about dying. | N\A |
+| Textblob  | N\A | N\A | N\A | when someone says they love you,  every effo gets noticed therefore should be exploited! im afraid of what im seeing. i love my girl. |
+| Stanza  |N\A |N\A | The railroad has no business in Tennessee. Therefore I have no interest in the state of Tennessee. |But my design was perfect!  Your autonomic functions were shut down, and even though your arm wasn't frozen, the aging was retarded, therefore your right arm is only slightly older than the left. |
 
 <!---
 example of a table:
+
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
 | -------------------| ---|---|---|---|
 | Nltk |  TBD |TBD |TBD |TBD |
 | Textblob  |TBD |TBD |TBD |TBD |
 | Stanza  |TBD |TBD |TBD |TBD |
+
+
 --->
 
 ## Contact details

@@ -12,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7675045">
+    <splitter split-orientation="horizontal" split-proportion="0.76960784">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -29,7 +29,7 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
                   <first_editor relative-caret-position="187">
-                    <caret line="279" selection-start-line="279" selection-end-line="279" />
+                    <caret line="294" selection-start-line="294" selection-end-line="294" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -53,7 +53,7 @@
             <entry file="file://$PROJECT_DIR$/RAW_SENTENCES">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="194">
-                  <caret line="33936" column="1" selection-start-line="33936" selection-start-column="1" selection-end-line="33936" selection-end-column="232" />
+                  <caret line="18856" column="1" selection-start-line="18856" selection-start-column="1" selection-end-line="18856" selection-end-column="99" />
                 </state>
               </provider>
             </entry>
@@ -71,24 +71,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>although i reall</find>
-      <find>no doctor exam</find>
-      <find>and kai see</find>
-      <find>by people who</find>
-      <find>I tried to investigate the attack. There are</find>
-      <find>how can you be so</find>
-      <find>by people who love</find>
-      <find>if i loved you a</find>
-      <find>i certainly wouldn't</find>
-      <find>but teaches you</find>
-      <find>maybe to have som</find>
-      <find>jacl</find>
-      <find>ferrar</find>
-      <find>Ferrar</find>
-      <find>to ferrar</find>
-      <find>speed 2</find>
-      <find>my bluetooth head</find>
-      <find>and there are many</find>
       <find>even tempo</find>
       <find>with a night of</find>
       <find>i thank you very m</find>
@@ -101,6 +83,24 @@
       <find>a little overwh</find>
       <find>how painfule?</find>
       <find>when they didn't have</find>
+      <find>we are different,</find>
+      <find>... see...</find>
+      <find>dogs broken h</find>
+      <find>you were a hos</find>
+      <find>no way to fix</find>
+      <find>in every way ex</find>
+      <find>however, isn't is</find>
+      <find>it is only logi</find>
+      <find>recommend to you</find>
+      <find>hea.</find>
+      <find>broken hea.</find>
+      <find>post my po</find>
+      <find>they love you</find>
+      <find>in the state of</find>
+      <find>but then i thought what</find>
+      <find>when someone says they love you,  every effo gets</find>
+      <find>functions were</find>
+      <find>in the state of te</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -272,20 +272,6 @@
       <workItem from="1604736701039" duration="20463000" />
       <workItem from="1604922550507" duration="7005000" />
       <workItem from="1604931117615" duration="2455000" />
-    </task>
-    <task id="LOCAL-00005" summary="added list_of_files aggregator">
-      <created>1603278002787</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1603278002787</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added delimiter to easily split the sentence in two on the analysis part">
-      <created>1603279575229</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1603279575229</updated>
     </task>
     <task id="LOCAL-00007" summary="finished first draft for scoring of sentences, and created beginning of structure of the plotting">
       <created>1603376731495</created>
@@ -616,11 +602,25 @@
       <option name="project" value="LOCAL" />
       <updated>1605018726980</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="added sentences examples to 'but'">
+      <created>1605019369994</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1605019369994</updated>
+    </task>
+    <task id="LOCAL-00055" summary="added sentences examples to 'but'">
+      <created>1605019718047</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1605019718047</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117852000" />
+    <option name="totallyTimeSpent" value="118582000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -663,7 +663,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated images" />
     <MESSAGE value="refractored code for Parsing of raw sentences" />
     <MESSAGE value="added link to html file of graph" />
     <MESSAGE value="added &quot;even though&quot; and &quot;and yet&quot; to characterized words" />
@@ -688,7 +687,8 @@
     <MESSAGE value="added example sentences for 'although'" />
     <MESSAGE value="added sentences for 'and yet'" />
     <MESSAGE value="added sentences for 'but'" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sentences for 'but'" />
+    <MESSAGE value="added sentences examples to 'but'" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sentences examples to 'but'" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -971,7 +971,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="187">
-            <caret line="279" selection-start-line="279" selection-end-line="279" />
+            <caret line="294" selection-start-line="294" selection-end-line="294" />
           </first_editor>
           <second_editor />
         </state>
