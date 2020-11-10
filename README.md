@@ -266,9 +266,9 @@ score), will not count as a sentence in a certain quadrant.
 #### but
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
 | -------------------| ---|---|---|---|
-| Nltk |  TBD |TBD |TBD |TBD |
-| Textblob  |TBD |TBD |TBD |TBD |
-| Stanza  |TBD |TBD |TBD |TBD |
+| Nltk |  Our abstinence makes our love immortal.  If I loved you a quarter of an hour ago, now I should love you even more.  But I should love you less if you exhausted my joy by satisfying all my desires. |Naturally, Dave, I'm not pleased that the AO-unit has failed, but I hope at least this has restored your confidence in my integrity and reliability. I certainly wouldn't want to be disconnected, even temporarily, as I have never been disconnected in my entire service history. |Crash is a depressing little nothing, that provokes emotion, but teaches you nothing if you already know racism and prejudice are bad things. |I honestly don't know. Maybe to have someone to cover for him. And I wish I could, but there's no doubt in my mind he killed those men. |
+| Textblob  |I have seen many movies starring Jaclyn Smith, but my god this was one of her best, though it came out 12 years ago. | Yes, I know what you mean, but I've already spoken to Ferrari. You'll still win at roulette. | This is one of the worst Sandra Bullock movie since Speed 2 But not quite that bad. | I bought these hoping I could make my Bluetooth headset fit better but these things made it impossible to wear. |
+| Stanza  |Fine, fine. You know, your dedication to this patient is an inspiring thing, Treves. But you must remember that this is a hospital, and there are many patients here. Patients who can be made well, and you owe them your first consideration. Just don't become so obsessed, old man, that you begin to neglect them. | Naturally, Dave, I'm not pleased that the AO-unit has failed, but I hope at least this has restored your confidence in my integrity and reliability. I certainly wouldn't want to be disconnected, even temporarily, as I have never been disconnected in my entire service history. |Well, technically, the procedure itself is brain damage, but on a par with a night of heavy drinking. Nothing you'll miss. | I thank you very much for the invitation, but I'm quite busy today. Perhaps I could see you tomorrow. |
 
 #### even though
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
@@ -290,6 +290,16 @@ score), will not count as a sentence in a certain quadrant.
 | Nltk |  TBD |TBD |TBD |TBD |
 | Textblob  |TBD |TBD |TBD |TBD |
 | Stanza  |TBD |TBD |TBD |TBD |
+
+
+<!---
+example of a table:
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  TBD |TBD |TBD |TBD |
+| Textblob  |TBD |TBD |TBD |TBD |
+| Stanza  |TBD |TBD |TBD |TBD |
+--->
 
 ## Contact details
 
