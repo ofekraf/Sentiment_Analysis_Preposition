@@ -238,31 +238,58 @@ for in-depth interactive maps please see below:
 ## Discussion
 <!--TBD-->
 
+### Example sentences
 Before diving in, let us look at a couple of examples from each quadrant, for 
 each analyzed preposition. 
 
 N\A means no such sentence was currently found for the correlating 
 module-preposition-quadrant.
 
+for the sake of this section, any sentence that was placed on the axis 
+themselves (ie - at least one of the sentences' clauses received a neutral 
+score), will not count as a sentence in a certain quadrant.  
 
 #### although
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
 | -------------------| ---|---|---|---|
-| Nltk |  TBD |TBD |TBD |TBD |
-| Textblob  |TBD |TBD |TBD |TBD |
-| stanza  |TBD |TBD |TBD |TBD |   
+| Nltk |  N\A | N\A|She was quite disappointed although some blame needs to be placed at her door. |I think it was Robert Ryans best film, because he portrayed someone like my father, and he was a schizophrenic in real life,(my father) although he never murdered anyone but was affected more so during the second world war which made him worse|
+| Textblob  |The police report said an escaped lunatic attacked them. He must have been a very powerful man. Although I really don't see that it is any of your concern, Miss Price |N\A |N\A |might have met a nice, although similarly filthy, gentleman tonight. see where it goes |
+| Stanza  |N\A |N\A |The police report said an escaped lunatic attacked them. He must have been a very powerful man. Although I really don't see that it is any of your concern, Miss Price. |might have met a nice, although similarly filthy, gentleman tonight. see where it goes |   
 
 #### and yet
-
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  TBD |TBD |TBD |TBD |
+| Textblob  |TBD |TBD |TBD |TBD |
+| Stanza  |TBD |TBD |TBD |TBD |
 
 #### but
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  TBD |TBD |TBD |TBD |
+| Textblob  |TBD |TBD |TBD |TBD |
+| Stanza  |TBD |TBD |TBD |TBD |
 
 #### even though
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  TBD |TBD |TBD |TBD |
+| Textblob  |TBD |TBD |TBD |TBD |
+| Stanza  |TBD |TBD |TBD |TBD |
 
 #### however
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  TBD |TBD |TBD |TBD |
+| Textblob  |TBD |TBD |TBD |TBD |
+| Stanza  |TBD |TBD |TBD |TBD |
 
 #### therefore
-
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  TBD |TBD |TBD |TBD |
+| Textblob  |TBD |TBD |TBD |TBD |
+| Stanza  |TBD |TBD |TBD |TBD |
 
 ## Contact details
 
