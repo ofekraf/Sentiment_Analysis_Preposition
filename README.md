@@ -19,7 +19,6 @@ on the meaning (or at least use) of prepositions in the English language.
     * [Graphs](#Graphs)
 - [Discussion](#Discussion)
 - [Contact details](#Contact details)
-<!------>
 
 ## Introduction
 Natural language processing (NLP) is a subfield of linguistics, computer science, 
