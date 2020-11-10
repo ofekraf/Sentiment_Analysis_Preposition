@@ -249,6 +249,8 @@ for the sake of this section, any sentence that was placed on the axis
 themselves (ie - at least one of the sentences' clauses received a neutral 
 score), will not count as a sentence in a certain quadrant.  
 
+<!-- TBD - add quandrent statistics: how many sentences per quadrent -->
+
 #### although
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
 | -------------------| ---|---|---|---|
@@ -273,9 +275,9 @@ score), will not count as a sentence in a certain quadrant.
 #### even though
 | module \ quadrant  | 1st | 2nd |3rd | 4th |
 | -------------------| ---|---|---|---|
-| Nltk |  TBD |TBD |TBD |TBD |
-| Textblob  |TBD |TBD |TBD |TBD |
-| Stanza  |TBD |TBD |TBD |TBD |
+| Nltk |  You share General Loewenhielm's exquisite joy in his partaking of the Cailles en Sarcophage even though you are just watching a movie - but you do wish for just a small sample to savor. |No, you listen. We're partners now and even though I'm running the show for you, I'm still running the show. That means I get a little respect. So I don't want to hear anymore of this Scooter, Buddy, Junior, Skippy, Tiger, bullshit. It's Jake.  And I gotta tell you, for a guy who spends all his time in a gym, you could be in better shape. |N\A |It was incomprehensible. What was God up to? Here I was denying all my natural lust in order to deserve God's gift and there was Mozart indulging his in all directions - even though engaged to be married! - and no rebuke at all! Was it possible I was being tested? Was God expecting me to offer forgiveness in the face of every offense, no matter how painful? That was very possible. All the same, why him? Why use Mozart to teach me lessons in humility? My heart was filling up with such hatred for that little man. For the first time in my life I began to know really violent thoughts. I couldn't stop them. |
+| Textblob  |Our server was very nice, and even though he looked a little overwhelmed with all of our needs, he stayed professional and friendly until the end. |N\A |another   client! she weighed less than 120 pounds but even though she was thin, she needed |But my design was perfect!  Your autonomic functions were shut down, and even though your arm wasn't frozen, the aging was retarded, therefore your right arm is only slightly older than the left. |
+| Stanza  |Our server was very nice, and even though he looked a little overwhelmed with all of our needs, he stayed professional and friendly until the end. |It was incomprehensible. What was God up to? Here I was denying all my natural lust in order to deserve God's gift and there was Mozart indulging his in all directions - even though engaged to be married! - and no rebuke at all! Was it possible I was being tested? Was God expecting me to offer forgiveness in the face of every offense, no matter how painful? That was very possible. All the same, why him? Why use Mozart to teach me lessons in humility? My heart was filling up with such hatred for that little man. For the first time in my life I began to know really violent thoughts. I couldn't stop them. |N\A |You miss the good ol' days.  Even though there were still poor people who died from diseases when they didn't have to. And rich people spent obscene amounts of money redecorating their houses to match the cat.  Those good ol' days?|
 
 #### however
 | module \ quadrant  | 1st | 2nd |3rd | 4th |

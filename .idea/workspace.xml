@@ -12,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.65170556">
+    <splitter split-orientation="horizontal" split-proportion="0.7675045">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -28,8 +28,8 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="349">
-                    <caret line="261" column="18" lean-forward="true" selection-start-line="261" selection-start-column="18" selection-end-line="261" selection-end-column="18" />
+                  <first_editor relative-caret-position="187">
+                    <caret line="279" selection-start-line="279" selection-end-line="279" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -53,7 +53,7 @@
             <entry file="file://$PROJECT_DIR$/RAW_SENTENCES">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="194">
-                  <caret line="17285" column="1" selection-start-line="17285" selection-start-column="1" selection-end-line="17285" selection-end-column="168" />
+                  <caret line="33936" column="1" selection-start-line="33936" selection-start-column="1" selection-end-line="33936" selection-end-column="232" />
                 </state>
               </provider>
             </entry>
@@ -71,36 +71,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>log_discarded_lines</find>
-      <find>_should_dis_regard_line</find>
-      <find>font</find>
-      <find>disca</find>
-      <find>prop</find>
-      <find>prefix</find>
-      <find>Sentiment Analysis - a (very) brief overview</find>
-      <find>Sentiment Analysis - overview</find>
-      <find>Sentiment Analysis</find>
-      <find>overview</find>
-      <find>now i should love you</find>
-      <find>os.path.join</find>
-      <find>prepos</find>
-      <find>plot(</find>
-      <find>scatter_plots_by_preposition</find>
-      <find>preposition</find>
-      <find>mpld3.sa</find>
-      <find>file_to_save_suffix</find>
-      <find>#</find>
-      <find>##</find>
-      <find>TBD</find>
-      <find>stanz</find>
-      <find>prepositions</find>
-      <find>the majo</find>
-      <find>TL;D</find>
-      <find>and he was a sch</find>
-      <find>some blame</find>
-      <find>lunatic atta</find>
-      <find>might have met a</find>
       <find>although i reall</find>
+      <find>no doctor exam</find>
+      <find>and kai see</find>
+      <find>by people who</find>
+      <find>I tried to investigate the attack. There are</find>
+      <find>how can you be so</find>
+      <find>by people who love</find>
+      <find>if i loved you a</find>
+      <find>i certainly wouldn't</find>
+      <find>but teaches you</find>
+      <find>maybe to have som</find>
+      <find>jacl</find>
+      <find>ferrar</find>
+      <find>Ferrar</find>
+      <find>to ferrar</find>
+      <find>speed 2</find>
+      <find>my bluetooth head</find>
+      <find>and there are many</find>
+      <find>even tempo</find>
+      <find>with a night of</find>
+      <find>i thank you very m</find>
+      <find>sarcop</find>
+      <find>scooter,</find>
+      <find>god expe</find>
+      <find>he looked a little o</find>
+      <find>120 pounds but</find>
+      <find>arm wasn't</find>
+      <find>a little overwh</find>
+      <find>how painfule?</find>
+      <find>when they didn't have</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -272,20 +272,6 @@
       <workItem from="1604736701039" duration="20463000" />
       <workItem from="1604922550507" duration="7005000" />
       <workItem from="1604931117615" duration="2455000" />
-    </task>
-    <task id="LOCAL-00003" summary="added &quot;although&quot; and &quot;though&quot; to pronouns">
-      <created>1603219144703</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1603219144703</updated>
-    </task>
-    <task id="LOCAL-00004" summary="refractored parse to different file and class">
-      <created>1603277295083</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1603277295083</updated>
     </task>
     <task id="LOCAL-00005" summary="added list_of_files aggregator">
       <created>1603278002787</created>
@@ -616,11 +602,25 @@
       <option name="project" value="LOCAL" />
       <updated>1605018013818</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="added sentences for 'and yet'">
+      <created>1605018324963</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1605018324963</updated>
+    </task>
+    <task id="LOCAL-00053" summary="added sentences for 'but'">
+      <created>1605018726979</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1605018726980</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116608000" />
+    <option name="totallyTimeSpent" value="117852000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -635,7 +635,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15987934" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07692308" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -663,8 +663,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="extracted list_of_files" />
-    <MESSAGE value="added interactive graph" />
     <MESSAGE value="updated images" />
     <MESSAGE value="refractored code for Parsing of raw sentences" />
     <MESSAGE value="added link to html file of graph" />
@@ -688,7 +686,9 @@
     <MESSAGE value="attempting inserting a table" />
     <MESSAGE value="added TBD for finding such sentences" />
     <MESSAGE value="added example sentences for 'although'" />
-    <option name="LAST_COMMIT_MESSAGE" value="added example sentences for 'although'" />
+    <MESSAGE value="added sentences for 'and yet'" />
+    <MESSAGE value="added sentences for 'but'" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sentences for 'but'" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -970,8 +970,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="349">
-            <caret line="261" column="18" lean-forward="true" selection-start-line="261" selection-start-column="18" selection-end-line="261" selection-end-column="18" />
+          <first_editor relative-caret-position="187">
+            <caret line="279" selection-start-line="279" selection-end-line="279" />
           </first_editor>
           <second_editor />
         </state>
