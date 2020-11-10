@@ -27,20 +27,20 @@ Natural language processing (NLP) is a subfield of linguistics, computer science
 and artificial intelligence concerned with the interactions between computers 
 and human language.
 
-The majority of studies to this date have used linguistics tools to pursue the 
-study of computer science, that is to say: develop smarter computers, able to 
-interact better with humans.
+The majority of academic studies regarding NLP to this date have used linguistics 
+tools to pursue the study of computer science, that is to say: develop smarter 
+computers, able to interact better with humans.
 
-A minority of studies aim to do he opposite: use computers to better study 
+A minority of studies aim to do the opposite: Use computers to better study 
 how humans interact with themselves. This humble project aims to do so.   
 
 ### Prepositions
 A preposition is a word used to link nouns, pronouns, or phrases to other words 
-within a sentence. Many such words exist, for example: 
+within a sentence. The english language has a lot of prepositions, for example: 
 "both", "and", "neither" and so on.
 
 Some prefer the use of the word 'conjunction' to  describe the  connection of 
-two  clauses, though to avoid the confusion with the boolean meaning, i will 
+two  clauses, though to avoid the confusion with the boolean meaning, I will 
 stick to the  terminology of prepositions.
 
 ### Goals
@@ -68,8 +68,11 @@ Using Sentiment analysis models, I compared the sentiment of the first clause
 of a sentence, up to but not including the preposition (henceforth - "prefix"),
  and the sentiment of the latter part of the clause (henceforth - "suffix"). 
  Plotting both sentiment scores, over different prepositions and different 
- pre-trained sentiment analysis models, the I plotted the
-  [graph below](###Graphs).     
+ pre-trained sentiment analysis models, I plotted the
+  [graph below](###Graphs). In it, the x axis represents the sentiment value 
+  for the prefix of the clause, and the y axis represents the sentiment value 
+  for the suffix of the clause. positive and negative values represent 
+  positive and negative sentiments correspondingly.  
 
 ### Sentiment Analysis overview
 Sentiment analysis is a use of natural language processing tools for text 
@@ -152,7 +155,7 @@ From the tweets dataset, I only took tweets that followed these two criteria:
 2.	The tweet contained only utf8 characters (mainly, no emojis)
 
 ### Edge cases
-1. Splitting the sentences, i only kept sentences that had 2 or more words in 
+1. Splitting the sentences, I only kept sentences that had 2 or more words in 
 every clause. Words here are defined as characters split by a space 
 character - " ". 
 
