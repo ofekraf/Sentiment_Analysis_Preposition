@@ -3,24 +3,22 @@ This project aims to use Sentiment analysis tools to gain insight and perspectiv
 on the meaning (or at least use) of prepositions in the English language. 
 
 <!--TBD-->
-<!---
 ## Table of contents
-- [Introduction](##introduction)
-    * [Prepositions](###prepositions)
-    * [Goals](###goals)
-        - [Examples](####Examples)
-- [Method](##Method)
-    * [TL;DR](###TL;DR)
-    * [Sentiment Analysis: a (very) brief overview](###Sentiment Analysis overview) 
-    * [Sentiment Analysis Models](###Sentiment Analysis Models)
-    * [Raw text origin](###Raw text origin)
-    * [Edge cases](###Edge cases)
-    * [Graph Expectations](###Edge cases)
-- [Results](##Results) 
-    * [Graphs](###Graphs)
-- [Discussion](###Discussion)
-- [Contact details](##Contact details)
---->
+- [Introduction](#introduction)
+    * [Prepositions](#prepositions)
+    * [Goals](#goals)
+        - [Examples](#examples)
+- [Method](#method)
+    * [TL;DR](#TL;DR)
+    * [Sentiment Analysis: a (very) brief overview](#sentiment-analysis-overview) 
+    * [Sentiment Analysis Models](#sentiment-analysis-models)
+    * [Raw text origin](#raw-text-origin)
+    * [Edge cases](#edge-cases)
+    * [Graph Expectations](#edge-cases)
+- [Results](#results) 
+    * [Graphs](#graphs)
+- [Discussion](#discussion)
+- [Contact details](#contact-details)
 
 ## Introduction
 Natural language processing (NLP) is a subfield of linguistics, computer science, 
@@ -69,7 +67,7 @@ of a sentence, up to but not including the preposition (henceforth - "prefix"),
  and the sentiment of the latter part of the clause (henceforth - "suffix"). 
  Plotting both sentiment scores, over different prepositions and different 
  pre-trained sentiment analysis models, I plotted the
-  [graph below](###Graphs). In it, the x axis represents the sentiment value 
+  [graph below](#graphs). In it, the x axis represents the sentiment value 
   for the prefix of the clause, and the y axis represents the sentiment value 
   for the suffix of the clause. positive and negative values represent 
   positive and negative sentiments correspondingly.  
@@ -237,6 +235,73 @@ for in-depth interactive maps please see below:
 
 ## Discussion
 <!--TBD-->
+
+### Example sentences
+Before diving in, let us look at a couple of examples from each quadrant, for 
+each analyzed preposition. 
+
+N\A means no such sentence was currently found for the correlating 
+module-preposition-quadrant.
+
+for the sake of this section, any sentence that was placed on the axis 
+themselves (ie - at least one of the sentences' clauses received a neutral 
+score), will not count as a sentence in a certain quadrant.  
+
+<!-- TBD - add quandrent statistics: how many sentences per quadrent -->
+
+#### although
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  N\A | N\A |She was quite disappointed although some blame needs to be placed at her door. |I think it was Robert Ryans best film, because he portrayed someone like my father, and he was a schizophrenic in real life,(my father) although he never murdered anyone but was affected more so during the second world war which made him worse|
+| Textblob  |The police report said an escaped lunatic attacked them. He must have been a very powerful man. Although I really don't see that it is any of your concern, Miss Price |N\A |N\A |might have met a nice, although similarly filthy, gentleman tonight. see where it goes |
+| Stanza  |N\A |N\A |The police report said an escaped lunatic attacked them. He must have been a very powerful man. Although I really don't see that it is any of your concern, Miss Price. |might have met a nice, although similarly filthy, gentleman tonight. see where it goes |   
+
+#### and yet
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  N\A |I tried to investigate the attack. There are no records. The case was closed and now they've 'misplaced' the file. David's lacerations were cleaned and dressed when he arrived here and yet supposedly no doctor examined him before I did. The Goodman boy is already in the ground so he's no good to us. So I went to the pub in East Proctor where I was convinced of two things. |in the brazil show, they had no problem and yet aoi, reita and kai seemed to be in a bad mood |you're surrounded by people who love you (even more than you deserve) and yet, why are so hateful? |
+| Textblob  |N\A | N\A | I tried to investigate the attack. There are no records. The case was closed and now they've 'misplaced' the file. David's lacerations were cleaned and dressed when he arrived here and yet supposedly no doctor examined him before I did. The Goodman boy is already in the ground so he's no good to us. So I went to the pub in East Proctor where I was convinced of two things. |N\A |
+| Stanza  |N\A |N\A |I just don't see how someone, anyone, can appear that way and yet be involved in such total shit. How can you be so fucking, I don't know, cool about it? |you're surrounded by people who love you (even more than you deserve) and yet, why are so hateful? |
+
+#### but
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  Our abstinence makes our love immortal.  If I loved you a quarter of an hour ago, now I should love you even more.  But I should love you less if you exhausted my joy by satisfying all my desires. |Naturally, Dave, I'm not pleased that the AO-unit has failed, but I hope at least this has restored your confidence in my integrity and reliability. I certainly wouldn't want to be disconnected, even temporarily, as I have never been disconnected in my entire service history. |Crash is a depressing little nothing, that provokes emotion, but teaches you nothing if you already know racism and prejudice are bad things. |I honestly don't know. Maybe to have someone to cover for him. And I wish I could, but there's no doubt in my mind he killed those men. |
+| Textblob  |I have seen many movies starring Jaclyn Smith, but my god this was one of her best, though it came out 12 years ago. | Yes, I know what you mean, but I've already spoken to Ferrari. You'll still win at roulette. | This is one of the worst Sandra Bullock movie since Speed 2 But not quite that bad. | I bought these hoping I could make my Bluetooth headset fit better but these things made it impossible to wear. |
+| Stanza  |Fine, fine. You know, your dedication to this patient is an inspiring thing, Treves. But you must remember that this is a hospital, and there are many patients here. Patients who can be made well, and you owe them your first consideration. Just don't become so obsessed, old man, that you begin to neglect them. | Naturally, Dave, I'm not pleased that the AO-unit has failed, but I hope at least this has restored your confidence in my integrity and reliability. I certainly wouldn't want to be disconnected, even temporarily, as I have never been disconnected in my entire service history. |Well, technically, the procedure itself is brain damage, but on a par with a night of heavy drinking. Nothing you'll miss. | I thank you very much for the invitation, but I'm quite busy today. Perhaps I could see you tomorrow. |
+
+#### even though
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  You share General Loewenhielm's exquisite joy in his partaking of the Cailles en Sarcophage even though you are just watching a movie - but you do wish for just a small sample to savor. |No, you listen. We're partners now and even though I'm running the show for you, I'm still running the show. That means I get a little respect. So I don't want to hear anymore of this Scooter, Buddy, Junior, Skippy, Tiger, bullshit. It's Jake.  And I gotta tell you, for a guy who spends all his time in a gym, you could be in better shape. |N\A |It was incomprehensible. What was God up to? Here I was denying all my natural lust in order to deserve God's gift and there was Mozart indulging his in all directions - even though engaged to be married! - and no rebuke at all! Was it possible I was being tested? Was God expecting me to offer forgiveness in the face of every offense, no matter how painful? That was very possible. All the same, why him? Why use Mozart to teach me lessons in humility? My heart was filling up with such hatred for that little man. For the first time in my life I began to know really violent thoughts. I couldn't stop them. |
+| Textblob  |Our server was very nice, and even though he looked a little overwhelmed with all of our needs, he stayed professional and friendly until the end. |N\A |another   client! she weighed less than 120 pounds but even though she was thin, she needed |But my design was perfect!  Your autonomic functions were shut down, and even though your arm wasn't frozen, the aging was retarded, therefore your right arm is only slightly older than the left. |
+| Stanza  |Our server was very nice, and even though he looked a little overwhelmed with all of our needs, he stayed professional and friendly until the end. |It was incomprehensible. What was God up to? Here I was denying all my natural lust in order to deserve God's gift and there was Mozart indulging his in all directions - even though engaged to be married! - and no rebuke at all! Was it possible I was being tested? Was God expecting me to offer forgiveness in the face of every offense, no matter how painful? That was very possible. All the same, why him? Why use Mozart to teach me lessons in humility? My heart was filling up with such hatred for that little man. For the first time in my life I began to know really violent thoughts. I couldn't stop them. |N\A |You miss the good ol' days.  Even though there were still poor people who died from diseases when they didn't have to. And rich people spent obscene amounts of money redecorating their houses to match the cat.  Those good ol' days?|
+
+#### however
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  Well done, Mr. Powers. We're not so different, you and I. It's true, you're British, and I'm Belgian. You have a full head of hair, mine is slightly receding. You're thin, I'm about forty pounds overweight. OK, we are different, I'm not making a very good point. However, isn't it ironic, Mr. Powers, that the very things you stand for-- swinging, free love, parties, distrust of authority- are all now, in the Nineties, considered to be... evil? Maybe we have more in common than you care to admit. | Now, no harm's come to you... and I aim to keep it that way. Ain't gonna... gonna run a train over ya... or however you call it... see... you was runnin' wild on me... these fever dreams you was havin'... these fits. I'd be chasin' you all night. |our dog blue has congestive failure.  treating her with medicine however there is no way to fix a dogs broken hea. |Here's something you might find interesting.  They have been built to emulate the human in every way except in its emotional spectrum. However, after a period of time it is only logical that such a 'mechanism' would create its own emotional responses, hate, love, fear, anger, envy. |
+| Textblob  |Well done, Mr. Powers. We're not so different, you and I. It's true, you're British, and I'm Belgian. You have a full head of hair, mine is slightly receding. You're thin, I'm about forty pounds overweight. OK, we are different, I'm not making a very good point. However, isn't it ironic, Mr. Powers, that the very things you stand for-- swinging, free love, parties, distrust of authority- are all now, in the Nineties, considered to be... evil? Maybe we have more in common than you care to admit. |N\A |Here's something you might find interesting.  They have been built to emulate the human in every way except in its emotional spectrum. However, after a period of time it is only logical that such a 'mechanism' would create its own emotional responses, hate, love, fear, anger, envy. | N\A |
+| Stanza  |N\A |I don't think you should become known in Vienna as a debtor, Mozart. However, I know a very distinguished gentleman I could recommend to you. And he has a daughter. Will that do? |our dog blue has congestive failure.  treating her with medicine however there is no way to fix a dogs broken hea. |i would love to post my  poster however i was dragged away before i could even do so   oh |
+
+#### therefore
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  when someone says they love you,  every effo gets noticed therefore should be exploited! im afraid of what im seeing. i love my girl. |The railroad has no business in Tennessee. Therefore I have no interest in the state of Tennessee. |On the couch. Dark. Quiet. I wondered if I had made a terrible mistake. I almost reached for the phone about a thousand times. I thought I could take it back, erase it, explain I had momentarily lost my mind. Then I told myself we weren't happy. That was the truth. That what we were was safe. It was unfair to you and to me to stay in a relationship for that reason. I thought about Clementine and the spark when I was with her, but then I thought what you and I had was real and adult and therefore significant even if it wasn't much fun. But I wanted fun. I saw other people having fun and I wanted it. Then I thought fun is a lie, that no one is really having fun; I'm being suckered by advertising and movie bullshit... then I thought maybe not, maybe not. And then I thought, as I always do at this point in my argument, about dying. | N\A |
+| Textblob  | N\A | N\A | N\A | when someone says they love you,  every effo gets noticed therefore should be exploited! im afraid of what im seeing. i love my girl. |
+| Stanza  |N\A |N\A | The railroad has no business in Tennessee. Therefore I have no interest in the state of Tennessee. |But my design was perfect!  Your autonomic functions were shut down, and even though your arm wasn't frozen, the aging was retarded, therefore your right arm is only slightly older than the left. |
+
+<!---
+example of a table:
+
+| module \ quadrant  | 1st | 2nd |3rd | 4th |
+| -------------------| ---|---|---|---|
+| Nltk |  TBD |TBD |TBD |TBD |
+| Textblob  |TBD |TBD |TBD |TBD |
+| Stanza  |TBD |TBD |TBD |TBD |
+
+
+--->
 
 ## Contact details
 

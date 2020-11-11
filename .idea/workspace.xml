@@ -11,65 +11,55 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parse.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1548">
-              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analyzer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="186" column="43" selection-start-line="186" selection-start-column="41" selection-end-line="186" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="279">
-                <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RUNNING_VARIABLES.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.76960784">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/RAW_SENTENCES">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="194">
+                  <caret line="1392" selection-start-line="1392" selection-end-line="1392" selection-end-column="243" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="180">
+                    <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/RUNNING_VARIABLES.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/RAW_SENTENCES">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="194">
+                  <caret line="18856" column="1" selection-start-line="18856" selection-start-column="1" selection-end-line="18856" selection-end-column="99" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,36 +70,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nlp</find>
-      <find>subplo</find>
-      <find>you... i've seen you around the base. but you...  you're not arm</find>
-      <find>however</find>
-      <find>verizon's bills, however, are difficult to</find>
-      <find>you know i think they think i should be king</find>
-      <find>log_discarded_lines</find>
-      <find>_should_dis_regard_line</find>
-      <find>font</find>
-      <find>disca</find>
-      <find>prop</find>
-      <find>prefix</find>
-      <find>Sentiment Analysis - a (very) brief overview</find>
-      <find>Sentiment Analysis - overview</find>
-      <find>Sentiment Analysis</find>
-      <find>overview</find>
-      <find>now i should love you</find>
-      <find>os.path.join</find>
-      <find>prepos</find>
-      <find>plot(</find>
-      <find>scatter_plots_by_preposition</find>
-      <find>preposition</find>
-      <find>mpld3.sa</find>
-      <find>file_to_save_suffix</find>
-      <find>#</find>
-      <find>##</find>
-      <find>TBD</find>
-      <find>stanz</find>
-      <find>prepositions</find>
-      <find>the majo</find>
+      <find>even tempo</find>
+      <find>with a night of</find>
+      <find>i thank you very m</find>
+      <find>sarcop</find>
+      <find>scooter,</find>
+      <find>god expe</find>
+      <find>he looked a little o</find>
+      <find>120 pounds but</find>
+      <find>arm wasn't</find>
+      <find>a little overwh</find>
+      <find>how painfule?</find>
+      <find>when they didn't have</find>
+      <find>we are different,</find>
+      <find>... see...</find>
+      <find>dogs broken h</find>
+      <find>you were a hos</find>
+      <find>no way to fix</find>
+      <find>in every way ex</find>
+      <find>however, isn't is</find>
+      <find>it is only logi</find>
+      <find>recommend to you</find>
+      <find>hea.</find>
+      <find>broken hea.</find>
+      <find>post my po</find>
+      <find>they love you</find>
+      <find>in the state of</find>
+      <find>but then i thought what</find>
+      <find>when someone says they love you,  every effo gets</find>
+      <find>functions were</find>
+      <find>in the state of te</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -159,11 +149,6 @@
             <path>
               <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sentiment_Analysis_Preposition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sentiment_Analysis_Preposition" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -286,55 +271,6 @@
       <workItem from="1604736701039" duration="20463000" />
       <workItem from="1604922550507" duration="7005000" />
       <workItem from="1604931117615" duration="2455000" />
-    </task>
-    <task id="LOCAL-00001" summary="added raw_sentences and their respective parsing into a readable format">
-      <created>1603204933415</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1603204933415</updated>
-    </task>
-    <task id="LOCAL-00002" summary="adding but_sentences file">
-      <created>1603205011048</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1603205011048</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added &quot;although&quot; and &quot;though&quot; to pronouns">
-      <created>1603219144703</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1603219144703</updated>
-    </task>
-    <task id="LOCAL-00004" summary="refractored parse to different file and class">
-      <created>1603277295083</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1603277295083</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added list_of_files aggregator">
-      <created>1603278002787</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1603278002787</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added delimiter to easily split the sentence in two on the analysis part">
-      <created>1603279575229</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1603279575229</updated>
-    </task>
-    <task id="LOCAL-00007" summary="finished first draft for scoring of sentences, and created beginning of structure of the plotting">
-      <created>1603376731495</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1603376731495</updated>
     </task>
     <task id="LOCAL-00008" summary="first plotting + axes + stretching of NLTK">
       <created>1603379247840</created>
@@ -623,11 +559,67 @@
       <option name="project" value="LOCAL" />
       <updated>1604932000735</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="attempting inserting a table">
+      <created>1605017351878</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1605017351879</updated>
+    </task>
+    <task id="LOCAL-00050" summary="added TBD for finding such sentences">
+      <created>1605017534065</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1605017534069</updated>
+    </task>
+    <task id="LOCAL-00051" summary="added example sentences for 'although'">
+      <created>1605018013818</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1605018013818</updated>
+    </task>
+    <task id="LOCAL-00052" summary="added sentences for 'and yet'">
+      <created>1605018324963</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1605018324963</updated>
+    </task>
+    <task id="LOCAL-00053" summary="added sentences for 'but'">
+      <created>1605018726979</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1605018726980</updated>
+    </task>
+    <task id="LOCAL-00054" summary="added sentences examples to 'but'">
+      <created>1605019369994</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1605019369994</updated>
+    </task>
+    <task id="LOCAL-00055" summary="added sentences examples to 'but'">
+      <created>1605019718047</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1605019718047</updated>
+    </task>
+    <task id="LOCAL-00056" summary="added sentences for 'therefore'">
+      <created>1605020109058</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1605020109058</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114062000" />
+    <option name="totallyTimeSpent" value="119968000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -642,7 +634,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1907994" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07692308" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -653,15 +645,15 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.22601625" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.25528455" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.10569106" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.19837399" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.7470449" visible="true" weight="0.21794872" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.7470449" weight="0.21794872" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="4" sideWeight="0.25295508" side_tool="true" weight="0.16591252" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
@@ -670,13 +662,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added graph to README" />
-    <MESSAGE value="spelling" />
-    <MESSAGE value="capitalized prepositions in graph" />
-    <MESSAGE value="extracted list_of_files" />
-    <MESSAGE value="added interactive graph" />
-    <MESSAGE value="updated images" />
-    <MESSAGE value="refractored code for Parsing of raw sentences" />
     <MESSAGE value="added link to html file of graph" />
     <MESSAGE value="added &quot;even though&quot; and &quot;and yet&quot; to characterized words" />
     <MESSAGE value="added files for data on new propositions" />
@@ -695,7 +680,14 @@
     <MESSAGE value="TOC attempt 2" />
     <MESSAGE value="TOC attempt 3" />
     <MESSAGE value="re-commenting" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-commenting" />
+    <MESSAGE value="attempting inserting a table" />
+    <MESSAGE value="added TBD for finding such sentences" />
+    <MESSAGE value="added example sentences for 'although'" />
+    <MESSAGE value="added sentences for 'and yet'" />
+    <MESSAGE value="added sentences for 'but'" />
+    <MESSAGE value="added sentences examples to 'but'" />
+    <MESSAGE value="added sentences for 'therefore'" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sentences for 'therefore'" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -908,13 +900,6 @@
     <entry file="file://$PROJECT_DIR$/sentiments/although_sentences_sentiments.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/RAW_SENTENCES">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="23277" column="1" selection-start-line="23277" selection-start-column="1" selection-end-line="23277" selection-end-column="197" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/Custom Office Templates/Sentiment_Analysis_Preposition/Lib/site-packages/matplotlib/figure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
@@ -937,6 +922,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RUNNING_VARIABLES.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -949,7 +941,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1548">
+        <state relative-caret-position="468">
           <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -957,16 +949,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RUNNING_VARIABLES.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
+        <state relative-caret-position="468">
           <caret line="186" column="43" selection-start-line="186" selection-start-column="41" selection-end-line="186" selection-end-column="43" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -974,11 +959,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RAW_SENTENCES">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="1392" selection-start-line="1392" selection-end-line="1392" selection-end-column="243" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="279">
-            <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <first_editor relative-caret-position="180">
+            <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           </first_editor>
           <second_editor />
         </state>
