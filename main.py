@@ -23,6 +23,19 @@ def main():
     else:
         print(colored("Warning: analyzer not run!", 'red'))
 
+    if GET_REPRESENTATIVE_SENTENCES:
+        # todo
+        pass
+        # get_representative_sentences()
+
+    if GET_STATISTICS:
+        # todo
+        pass
+
+    if GET_VECTOR_NOTATION:
+        # todo
+        pass
+
 def clean_tweets():
     import string
     printable = set(string.printable)
@@ -46,8 +59,11 @@ if __name__ == '__main__':
     main()
 
 
-# todo: Flair
-# todo - parsers: https://elitedatascience.com/python-nlp-libraries
+# todo - ideas:
+# 1. analyze specific text corpuses (such as american presidential speeches with this kind of method)
+# 2. add new NLP SPACY model
+# 3. add vecor notation for prepositions
+# 4. add README handles for automatic updating of readme
 
 # todo:
 # https://github.com/niderhoff/nlp-datasets
