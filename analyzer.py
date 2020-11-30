@@ -78,9 +78,11 @@ class Analyzer:
 
     def _plot_main_figure(self):
         fig, all_plots = plt.subplots(len(self.list_of_files),
-                                      len(self.sentiment_modules))
+                                      len(self.sentiment_modules),
+                                      figsize=(15, 15)
+                                      )
         fig.suptitle(
-            "Sentiment of first vs second part of clause, parted  by Prepositiosn")
+            "first vs second part of clause Sentiments, parted by Prepositiosn")
 
         for mod_idx, module in enumerate(self.sentiment_modules):
             all_plots[0, mod_idx].set_title(module)
@@ -103,6 +105,7 @@ class Analyzer:
                                           linestyle='solid')
         all_plots[prop_idx, mod_idx].axis(xmin=-5, xmax=5,
                                           ymin=-5, ymax=5)
+        all_plots[prop_idx, mod_idx].set_aspect('equal', 'box')
         all_plots[prop_idx, 0].set_ylabel(
             string.capwords(preposition), fontsize=10, color=color)
         all_plots[prop_idx, 0].yaxis.set_label_position("left")

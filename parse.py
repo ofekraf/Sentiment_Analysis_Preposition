@@ -25,11 +25,11 @@ class Parse:
 
     def parse_line(self, line):
         for preposition in self._get_substring_propositions():
-            if len(self.preposition_split_sentences[
-                       preposition[1:-1]]) > 100:
-                self.prepositions_counter[preposition[1:-1]] += 1
-                if (self.prepositions_counter[preposition[1:-1]] % 50) != 0:
-                    continue
+            # if len(self.preposition_split_sentences[
+            #            preposition[1:-1]]) > 100:
+            #     self.prepositions_counter[preposition[1:-1]] += 1
+            #     if (self.prepositions_counter[preposition[1:-1]] % 50) != 0:
+            #         continue
             if preposition in line.lower():
                 splited_line = tuple(line.lower().split(preposition))
                 if self._should_dis_regard_line(splited_line):
@@ -62,11 +62,14 @@ class Parse:
 
     def _write_results(self, prep):
         cur_file = prep + "_sentences"
+        temp = self.delimiter
+        self.delimiter = " but "
         with open(os.path.join("sentences", cur_file), 'w') as writer:
             for tup in self.preposition_split_sentences[prep]:
                 res = tup[0] + self.delimiter + tup[1]
                 res = res + '\n' if '\n' not in res else res
                 writer.write(res)
+        self.delimiter = temp
 
     def _get_substring_propositions(self):
         substrings = []

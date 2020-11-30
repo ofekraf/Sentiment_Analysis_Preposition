@@ -2,7 +2,7 @@
 
 
 #==================Parser====================================
-EXTRACT_PREPOSITION_SENTENCES = False
+EXTRACT_PREPOSITION_SENTENCES = True
 MINIMAL_AMOUNT_OF_WORDS_IN_CLAUSE = 2
 
 #==================Analyzer==================================
@@ -13,7 +13,7 @@ ANALYZE_DATA_FROM_SCRATCH = RUN_ANALYSER and False
 DISPLAY_MAIN_IMAGE = RUN_ANALYSER and True
 UPDATE_SHOWN_IMAGE = RUN_ANALYSER and False
 SHOW_INTERACTIVE_IMAGE = RUN_ANALYSER and False
-PLOT_INDIVIDUAL_PREPOSITION_MODULE_PLOTS = RUN_ANALYSER and True
+PLOT_INDIVIDUAL_PREPOSITION_MODULE_PLOTS = RUN_ANALYSER and False
 #==================Logs=======================================
 PRINT_LOGS = True
 
@@ -28,4 +28,4 @@ CLEAN_MOVIE_LINES = False
 
 #==================Prepositions===============================
 DELIMITER = "###---###"
-CHECKED_PREPOSITIONS = ['although', 'and yet', 'but', 'even though', 'however', 'therefore']
+CHECKED_PREPOSITIONS = ['but']#['although', 'and yet', 'but', 'even though', 'however', 'therefore']
