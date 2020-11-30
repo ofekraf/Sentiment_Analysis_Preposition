@@ -4,7 +4,7 @@ on the meaning (or at least use) of prepositions in the English language.
 
 following multiple discussions with both NLP personnel and Linguists, I have chosen not to persue 
 the methods presented below (and will gladly discuss this in person). for a pivot of this idea, please see 
-this repository: [to complete]   
+this repository: https://github.com/ofekraf/but-readings-prediction
 
 ## Table of contents
 - [Introduction](#introduction)
@@ -308,7 +308,7 @@ example of a table:
 
 ## Future work
 this project has been a kick-starter for ideas for my thesis work on Generative 
-linguistics. for the project that has followed it, please see this repository [to complete]
+linguistics. for the project that has followed it, please see [this repository](https://github.com/ofekraf/but-readings-prediction)
 
 
 
